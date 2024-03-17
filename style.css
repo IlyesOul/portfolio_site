@@ -1,0 +1,447 @@
+h1 {
+    color: yellow;
+    margin-left:30px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-left:30px;
+}
+
+p{
+    font-weight: 100;
+    text-align: center;
+    font-size: large;
+    color:yellow;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.a{
+    text-align: center;
+    align-content: center;
+}
+
+.header{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    border-style: dashed;
+    border:dodgerblue;
+}
+
+.header2{
+    background-color: cadetblue;
+    /*display:grid;
+    align-self:left;
+    text-align: left;
+    justify-content: left;*/
+    border-style:ridge;
+    width: 12in;
+}
+
+.site-description{
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    border-style: groove;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ul{
+    color: chocolate;
+}
+
+.games{
+    border: 2px solid blue;
+    border-radius:  5px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.images{
+    border:black;
+}
+.header * {
+    border: solid;
+}
+
+.menu{
+    margin-right: 20px;
+}
+
+.menu a{
+    margin-left: 20px;
+}
+
+a:link{
+    color: honeydew;
+}
+
+a:visited{
+    color: blue;
+}
+
+.item{
+    position: relative;
+}
+
+.dropbtn {
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(59, 59, 158);
+    color: yellow;
+    padding: 2px;
+    font-size: 16px;
+    border: tomato;
+    border-style:groove;
+    height: 2in;
+    width: 3in;
+    float:right;
+    
+  }
+
+  .dropdown {
+    align-content: right;
+    position: relative;
+    display: inline-block;
+    align-self: right;
+  }
+
+  .dropdown-content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    display: none;
+    align-content:space-between;
+    background-color: yellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    align-content: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration:grey;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display:grid;}
+
+  .dropdown:hover .dropbtn {background-color: blue;}
+
+.item p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+
+.item:hover img{
+    opacity:0.66;
+}
+
+
+.img{
+    text-align: center;
+}
+
+.item:hover p{
+    opacity:1;
+}
+
+.background{
+    background-color: black;
+}
+
+.video{
+    text-align: center;
+}
+
+.ul{
+    text-align: center;
+    color:white;
+}
+
+.email{
+    text-align: left;
+}
+
+.diagnostic{
+    text-align: left;
+}
+
+.ad{
+    text-align: right;
+    align-content:space-around;
+}
+
+
+.white_circle
+{
+    border-radius: 50%;
+    margin-left:85px;
+    width: 45px;
+    height:45px;
+    background-color: whitesmoke; 
+    margin-top:75px
+}
+
+.white_circle :hover .white_text
+{   
+    opacity: 1;
+}
+
+.white_text{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.red_circle
+{
+    border-radius: 50%;
+    margin-left:85px;
+    width: 45px;
+    height:45px;
+    background-color: red; 
+    margin-top:75px
+}
+
+.green_circle
+{
+    border-radius: 50%;
+    margin-left:85px;
+    width: 45px;
+    height:45px;
+    background-color: darkgreen; 
+    margin-top:175px
+}
+
+.title
+{
+    font-family: '"Lucida Console", "Courier New", monospace;';
+    margin-left:390px;
+    margin-top:-190px;
+    color:white;
+    font-size:50px;
+}
+
+
+.blue_bar
+{
+    width:6px;
+    height: 125px;
+    background-color:blue;
+    margin-left:727px;
+    margin-top:-85px;
+}
+
+.green_bar
+{
+    height:3px;
+    width: 270px;
+    background-color:darkgreen;
+    margin-left:100px;
+    margin-top:-60px;
+}
+
+.red_bar
+{
+    height:3px;
+    width: 270px;
+    background-color:red;
+    margin-left:110px;
+    margin-top:-50px;
+}
+
+.white_bar
+{
+    height:3px;
+    width: 270px;
+    background-color:whitesmoke;
+    margin-left:110px;
+    margin-top:-50px;
+}
+
+.intro_text
+{
+    font-family: '"Lucida Console", "Courier New", monospace;';
+    font-size:20px;
+    color:rgb(183, 181, 181);
+    margin-left:747px;
+}
+
+.learn_more_box
+{
+    border-color:rgb(157, 3, 3);
+    border-style: solid;
+    border-radius: 5%;
+    font-size:17px;
+    color:rgb(157, 3, 3);
+    margin-top:55px;
+    margin-left:275px;
+    font-family: '"Lucida Console", "Courier New", monospace;';
+    width:150px;
+    text-align:center;
+    height:35px;
+    border-width:thin;
+    font-weight:550;
+    vertical-align: middle;
+    line-height: 35px;
+}
+
+.learn_more_box :hover {background-color: rgb(177, 81, 81); opacity: 25%;}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 25px solid #ffffff;
+    margin-left:65px;
+}
+
+.scroll_bar
+{
+    width: 5px;
+    height:50px;
+    background-color: #ffffff;
+    margin-left:68px;
+    margin-top:-75px;
+}
+
+li {
+    list-style: lower-greek;
+    margin-left:30px; 
+    margin-top:45px; 
+    font-family: '"Lucida Console", "Courier New", monospace;'; 
+    font-size:20px; 
+    color:rgb(183, 181, 181); 
+    margin-right:910px
+ }
+
+ .battery {
+    border: 3px solid #333;
+    width: 40px;
+    height: 250px;
+    padding: 2px;
+    border-radius: 4px;
+    position: relative;
+    margin: 15px;
+    border-color:aliceblue;
+    transform:rotate(90deg);
+ }
+
+ .batteryLevel {
+    border-radius: 2px;
+    background-color: #73AD21;
+  } 
+  
+  
+  .ML_IMG{
+    padding:1%;
+    /*background-color: rgb(133, 128, 36);*/
+    border-color: antiquewhite;
+    border-style: solid;
+    /* modify margin and padding here*/
+    padding: 30px;
+    margin: 25px;
+    width:310px;
+    margin-left: 50px;
+    margin-top: 205px;
+    font-family:'Spectral';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:50%;
+    border-color:aliceblue;
+    margin-top: 500px;
+    width: 250px;
+    margin: 20px;
+    padding: 50px;
+    border: 2px solid aliceblue;
+  }
+
+  .JAVA_IMG{
+    padding:1%;
+    /*background-color: rgb(133, 128, 36);*/
+    border-color: antiquewhite;
+    border-style: solid;
+    /* modify margin and padding here*/
+    padding: 30px;
+    margin: 25px;
+    width:500px;
+    margin-left: 50px;
+    margin-top: 205px;
+    font-family:'Spectral';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:50%;
+    border-color:aliceblue;
+    margin-top: 500px;
+    width: 250px;
+    margin: 20px;
+    padding: 50px;
+    border: 2px solid aliceblue;
+  }
+
+
+  .container {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Three rows of equal height */
+  }
+
+  .item {
+    padding: 20px; /* Padding around grid items */
+    border: .5px solid aliceblue; /* Border around grid items */
+    width:450px;
+  }
+
+  .tooltip {
+  margin-left:110px;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+  color:green;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
