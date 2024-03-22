@@ -201,7 +201,7 @@ a:visited{
 .white_circle
 {
     border-radius: 50%;
-    margin-left:85px;
+    margin-left:250px;
     width: 45px;
     height:45px;
     background-color: whitesmoke; 
@@ -221,7 +221,7 @@ a:visited{
 .red_circle
 {
     border-radius: 50%;
-    margin-left:85px;
+    margin-left:250px;
     width: 45px;
     height:45px;
     background-color: red; 
@@ -231,7 +231,7 @@ a:visited{
 .green_circle
 {
     border-radius: 50%;
-    margin-left:85px;
+    margin-left:250px;
     width: 45px;
     height:45px;
     background-color: darkgreen; 
@@ -241,7 +241,7 @@ a:visited{
 .title
 {
     font-family: '"Lucida Console", "Courier New", monospace;';
-    margin-left:390px;
+    margin-left:320px;
     margin-top:-190px;
     color:white;
     font-size:50px;
@@ -253,7 +253,7 @@ a:visited{
     width:6px;
     height: 125px;
     background-color:blue;
-    margin-left:727px;
+    margin-left:875px;
     margin-top:-85px;
 }
 
@@ -289,7 +289,7 @@ a:visited{
     font-family: '"Lucida Console", "Courier New", monospace;';
     font-size:20px;
     color:rgb(183, 181, 181);
-    margin-left:747px;
+    margin-left:900px;
 }
 
 .learn_more_box
@@ -429,12 +429,14 @@ li {
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 125px;
   background-color: black;
   color: #fff;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
+  margin-left:25px;
+  margin-top:-7px;
  
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -444,4 +446,23 @@ li {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+
+.instruction_text
+{
+    font-family: Lucida Console, Courier New, monospace;
+    color:whitesmoke;
+    margin-top:-156px;
+    font-size: 14px;
+    margin-left:50px;
+}
+
+.instruction_bar
+{
+    height:3px;
+    width: 270px;
+    background-color:darkgreen;
+    margin-left:100px;
+    margin-top:-60px;
 }
