@@ -16,59 +16,56 @@
     <body style = "background-color:rgb(26, 25, 25)">
 
         <!--Header-->
-        <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:150; color:white; font-size:40px; margin-top:75px">
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace; left:calc(100vw/2.5); color:white; font-size:calc(100vw/35); top:calc(100vw/80)">
             Family Tree
         </p>
       <!--Images-->
-        <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:0px; color:white; font-size:20px; margin-top:150px">
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace; left: calc(100vw/2.27);color:white; font-size:calc(100vw/65); top:calc(100vw/8.533);">
         Program Output
         </p>
 
-        <div class = "red_bar" style = "margin-top:-10px; margin-left:520px;width:200px;"></div>
+        <div class = "red_bar" style = "position:absolute; top:calc(100vw/5.25); left: calc(100vw/2.9);width:calc(100vw/6.4)"></div>
         
-        <video height = "400px" width = "650px" style= "margin-left:300px; margin-top:50px; border-radius: 5%;" controls>
+        <video style= "position:absolute; left:calc(100vw/4); top:calc(100vw/5); border-radius: 5%; width:calc(100vw/2); height:calc(100vw/5)" controls>
             <source src = "Images/Family_Tree.mp4" type = "video/mp4"></video>
-            <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:px; color:white; font-size:12px; margin-top:px">Program Running</p>
+            <p style = "position:absolute; font-family: Lucida Console, Courier New, monospace; left:calc(100vw/2.15); color:white; font-size:calc(100vw/125); top:calc(100vw/2.5);">Program Running</p>
 
         <!--Description Text-->
-        <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:-700px; color:white; font-size:20px; margin-top:150px">
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace; left:calc(100vw/5.75); color:white; font-size:large; margin-top:calc(100vw/2.226);">
             Program Description
         </p>
-        <div class = "red_bar" style = "margin-top:-10px; margin-left:160px;width:235px;"></div>
+        <div class = "red_bar" style = "position:absolute; top:calc(100vw/1.954); margin-left:calc(100vw/6.45);width:calc(100vw/5.446); "></div>
 
         <!--Description of behaviour-->
-        <p style = "font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:14px; margin-top:50px; margin-left:50px;margin-right:750px;">Reading in data from a 2d Array Matrix, the program counstructs a "Family Tree" LinkedList with keeping generations intact. The user can then get a list of any persons relatives</p>
-        <p style = "font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:14px; margin-top:50px; margin-left:50px;margin-right:750px;">While a Binary/RB tree seems more intuitive, the program required two seperate pointers and didn't need to be sorted</p>
-        <p style = "font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:14px; margin-top:100px; margin-left:50px;margin-right:750px;">The average time complexity is O(N)</p>
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:smaller; top:calc(100vw/2.05); left:calc(100vw/17.1); width:calc(100vw/2.56)">The program will begin by reading a predetermined 2D Array of parents and their children in a family. It will then construct a linked list with two pointers (NOT DOUBLY-LINKED) that will retain the generational relationships between all of the people. The user can then acquire a list of any person's relatives.</p>
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:smaller; top:calc(100vw/1.76); left:calc(100vw/17.1); width:calc(100vw/2.56)">While a Binary/RB tree seems more intuitive, the underlying linked list utilizes two seperate pointers and doesn't need to be sorted. </p>
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:smaller; top:calc(100vw/1.61); left:calc(100vw/17.1); width:calc(100vw/2.56)">The average time complexity is O(N)</p>
         
         <!--Technologies Used-->
-        <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:600px; color:white; font-size:20px; margin-top:-260px">
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace; color:white; left:calc(100vw/1.45); color:white; font-size:large; margin-top:calc(100vw/2.226);">
             Technologies Used
         </p>
-        <div class = "red_bar" style = "margin-top:-10px; margin-left:810px;width:230px;"></div>
+        <div class = "red_bar" style = "position:absolute; margin-top:calc(100vw/2.14); left:calc(100vw/1.7);width:calc(100vw/5.56);"></div>
 
-        <ol>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px; margin-right:-50px;">
-                Linked Lists
+        <div class = "list_grid">
+        <ol style = "position: absolute; top: calc(100vw/2.23); left:calc(100vw/23.27);">
+            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
+                Linked Lists (for storing peices)
             </li>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px;margin-right:-50px;">
-                Hashsets
-            </li>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px;margin-right:-50px;">
+            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
                 2D Arrays
             </li>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px;margin-right:-50px;">
+            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
                 Recursion
             </li>
         </ol>
+    </div>
 
         <!--Github Link-->
-         <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:px; color:white; font-size:20px; margin-top:175px">
+
+        <a  target = "_blank" href= "https://github.com/IlyesOul/UniSprouts" style = "position:absolute;font-family: Lucida Console, Courier New, monospace;  color:white; font-size:large; left: calc(100vw/2.4);top:calc(100vw/1.3); "> 
             Github Repository
-        </p>
-        <div class = "red_bar" style = "margin-top:-15px; margin-left:500px;width:235px;"></div>
-        <a  target = "_blank" href= "https://github.com/IlyesOul/UniSprouts" style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:300px;margin-left:575px;"> 
-        Repository</a>
+        </a>
 
     </body>
 </html>

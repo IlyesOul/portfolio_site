@@ -16,62 +16,59 @@
     <body style = "background-color:rgb(26, 25, 25)">
 
         <!--Header-->
-        <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:150; color:white; font-size:40px; margin-top:75px">
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace; left:calc(100vw/3); color:white; font-size:calc(100vw/35); top:calc(100vw/80)">
             Prioritized To-Do List
         </p>
       <!--Images-->
-        <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:0px; color:white; font-size:20px; margin-top:150px">
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace; left: calc(100vw/2.27);color:white; font-size:calc(100vw/65); top:calc(100vw/8.533);">
         Program Output
         </p>
 
-        <div class = "red_bar" style = "margin-top:-10px; margin-left:520px;width:200px;"></div>
+        <div class = "red_bar" style = "position:absolute; top:calc(100vw/5.25); left: calc(100vw/2.9);width:calc(100vw/6.4)"></div>
         
-        <img src = "Images/List_Output.png" height = "400px" width = "650px" style= "margin-left:300px; margin-top:50px; border-radius: 5%;">
-            <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:px; color:white; font-size:12px; margin-top:px">Program Running</p>
+        <img src = "Images/List_Output.png" style= "position:absolute; left:calc(100vw/4); top:calc(100vw/5); border-radius: 5%; width:calc(100vw/2); height:calc(100vw/5)">
+            <p style = "position:absolute; font-family: Lucida Console, Courier New, monospace; left:calc(100vw/2.15); color:white; font-size:calc(100vw/125); top:calc(100vw/2.5);">Program Running</p>
         <!--Description Text-->
-        <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:-700px; color:white; font-size:20px; margin-top:150px">
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace; left:calc(100vw/6.4); color:white; font-size:large; margin-top:calc(100vw/2.226);">
             Program Description
         </p>
-        <div class = "red_bar" style = "margin-top:-10px; margin-left:160px;width:235px;"></div>
+        <div class = "red_bar" style = "position:absolute; top:calc(100vw/1.954); margin-left:calc(100vw/7.11);width:calc(100vw/5.446); "></div>
 
-        <!--Description of behaviour-->
-        <p style = "font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:14px; margin-top:50px; margin-left:50px;margin-right:750px;">This program will comprehend the user's mental proccess for task prioritization by generating random events with different levels of criteon (difficulty, academic factor, time proximity, .etc)</p>
-        <p style = "font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:14px; margin-top:50px; margin-left:50px;margin-right:750px;">A Random Forest Ensemble, using a Recursive Feature Elimination (RFE) model, will be trained with the results of this prompting and will then organize the user's ACTUAL to-do list. The program will iterate through the list and remind the user of the next event every 'n' minutes (determined by user)</p>
+        
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:smaller; top:calc(100vw/2.05); left:calc(100vw/17.1); width:calc(100vw/2.56)">This program will comprehend the user's mental proccess for task prioritization by generating random events with different levels of criteon (difficulty, academic factor, time proximity, .etc).</p>
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace;  color:yellow; font-size:smaller; top:calc(100vw/1.73); left:calc(100vw/17.1); width:calc(100vw/2.56)">A Random Forest Ensemble, using a Recursive Feature Elimination (RFE) model, will be trained with the results of the prompt to then automatically organize the users' actual to-do list. The program will iterate through the list and remind the user of the next event every 'n' minutes (determined by user)</p>
 
-        <!--Technologies Used-->
-        <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:600px; color:white; font-size:20px; margin-top:-260px">
+        <p style = "position:absolute;font-family: Lucida Console, Courier New, monospace; color:white; left:calc(100vw/1.45); color:white; font-size:large; margin-top:calc(100vw/2.226);">
             Technologies Used
         </p>
-        <div class = "red_bar" style = "margin-top:-10px; margin-left:810px;width:230px;"></div>
+        <div class = "red_bar" style = "position:absolute; margin-top:calc(100vw/2.14); left:calc(100vw/1.7);width:calc(100vw/5.56);"></div>
 
-        <ol>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px; margin-right:-50px;">
+        <div class = "list_grid">
+        <ol style = "position: absolute; top: calc(100vw/2.23); left:calc(100vw/23.27);">
+            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
                 sklearn Library
             </li>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px; margin-right:-50px;">
+            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
                 Random Forest Ensembles
             </li>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px;margin-right:-50px;">
+            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
                 Recursive Feature Elimination
             </li>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px;margin-right:-50px;">
+            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
                 Numpy & Pandas
             </li>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px;margin-right:-50px;">
+            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
                 Objects
             </li>
-            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:35px;margin-left:800px;margin-right:-50px;">
+            <li style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
                 plyer Notification library
             </li>
         </ol>
+    </div>
 
-        <!--Github Link-->
-         <p style = "font-family: Lucida Console, Courier New, monospace; margin-left:px; color:white; font-size:20px; margin-top:175px">
-            Github Repository
-        </p>
-        <div class = "red_bar" style = "margin-top:-15px; margin-left:500px;width:235px;"></div>
-        <a  target = "_blank" href= "https://github.com/IlyesOul/To-Do-List" style = "font-family: Lucida Console, Courier New, monospace;  color:white; font-size:14px; margin-top:300px;margin-left:575px;"> 
-        Repository</a>
-
+        
+    <a  target = "_blank" href= "https://github.com/IlyesOul/To-Do-List" style = "position:absolute;font-family: Lucida Console, Courier New, monospace;  color:white; font-size:large; left: calc(100vw/2.4);top:calc(100vw/1.3); "> 
+        Github Repository
+    </a>
     </body>
 </html>

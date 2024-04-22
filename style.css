@@ -201,11 +201,11 @@ a:visited{
 .white_circle
 {
     border-radius: 50%;
-    margin-left:250px;
-    width: 45px;
-    height:45px;
+    margin-left:calc(100vw/4.5);
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
     background-color: whitesmoke; 
-    margin-top:75px
+    margin-top:calc(100vw/17.067);
 }
 
 .white_circle :hover .white_text
@@ -221,75 +221,76 @@ a:visited{
 .red_circle
 {
     border-radius: 50%;
-    margin-left:250px;
-    width: 45px;
-    height:45px;
+    margin-left:calc(100vw/4.5);
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
     background-color: red; 
-    margin-top:75px
+    margin-top:calc(100vw/17.067);
 }
 
 .green_circle
 {
     border-radius: 50%;
-    margin-left:250px;
-    width: 45px;
-    height:45px;
+    margin-left:calc(100vw/4.5);
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
     background-color: darkgreen; 
-    margin-top:175px
+    margin-top:calc(100vw/7.31428);
 }
 
 .title
 {
-    font-family: '"Lucida Console", "Courier New", monospace;';
-    margin-left:320px;
-    margin-top:-190px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-top:calc(-100vw/6.7638);
     color:white;
-    font-size:50px;
+    font-size: calc(100vw/25.6);
 }
 
 
 .blue_bar
 {
-    width:6px;
-    height: 125px;
+    position:absolute;
+    width:calc(100vw/213.33);
+    height: calc(100vw/9);
     background-color:blue;
-    margin-left:875px;
-    margin-top:-85px;
+    left:calc(100vw/1.3);
+    top:calc(100vw/5.75);
 }
 
 .green_bar
 {
-    height:3px;
-    width: 270px;
+    height:calc(100vw/426.667);
+    width: calc(100vw/4);
     background-color:darkgreen;
-    margin-left:100px;
-    margin-top:-60px;
+    margin-left:calc(100vw/12.8);
+    margin-top:calc(-100vw/21.3333);
 }
 
 .red_bar
 {
-    height:3px;
-    width: 270px;
+    height:calc(100vw/426.67);
+    width: calc(100vw/4.74);
     background-color:red;
-    margin-left:110px;
-    margin-top:-50px;
+    margin-left:calc(100vw/11.636);
+    margin-top:calc(-100vw/25.6);
 }
 
 .white_bar
 {
-    height:3px;
-    width: 270px;
+    height:calc(100vw/426.7);
+    width: calc(100vw/4.74);
     background-color:whitesmoke;
-    margin-left:110px;
-    margin-top:-50px;
+    margin-left:calc(100vw/11.64);
+    margin-top:calc(-100vw/25.6);
 }
 
 .intro_text
 {
-    font-family: '"Lucida Console", "Courier New", monospace;';
-    font-size:20px;
+    position:absolute;
+    font-family: "Lucida Console", "Courier New", monospace;;
+    font-size:calc(100vw/64);
     color:rgb(183, 181, 181);
-    margin-left:900px;
+    left:calc(100vw/1.27);
 }
 
 .learn_more_box
@@ -332,29 +333,29 @@ a:visited{
 }
 
 li {
-    list-style: lower-greek;
-    margin-left:30px; 
-    margin-top:45px; 
+    list-style:square;
+    margin-left:calc(100vw/42.7); 
+    margin-top:calc(100vw/28.4); 
     font-family: '"Lucida Console", "Courier New", monospace;'; 
-    font-size:20px; 
+    font-size:calc(100vw/64); 
     color:rgb(183, 181, 181); 
-    margin-right:910px
+    margin-right:calc(100vw/1.41)
  }
 
  .battery {
-    border: 3px solid #333;
-    width: 40px;
-    height: 250px;
-    padding: 2px;
-    border-radius: 4px;
+    border: calc(100vw/426.7) solid #333;
+    width: calc(100vw/32);
+    height: calc(100vw/5.12);
+    padding: calc(100vw/640);
+    border-radius: calc(100vw/320);
     position: relative;
-    margin: 15px;
+    margin: calc(100vw/85.33);
     border-color:aliceblue;
     transform:rotate(90deg);
  }
 
  .batteryLevel {
-    border-radius: 2px;
+    border-radius: calc(100vw/640);
     background-color: #73AD21;
   } 
   
@@ -365,22 +366,22 @@ li {
     border-color: antiquewhite;
     border-style: solid;
     /* modify margin and padding here*/
-    padding: 30px;
-    margin: 25px;
-    width:310px;
-    margin-left: 50px;
-    margin-top: 205px;
+    padding: calc(100vw/42.667);
+    margin: calc(100vw/51.2);
+    width:calc(100vw/4.13);
+    margin-left: calc(100vw/25.6);
+    margin-top: calc(100vw/6.24);
     font-family:'Spectral';
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size:50%;
     border-color:aliceblue;
-    margin-top: 500px;
-    width: 250px;
-    margin: 20px;
-    padding: 50px;
-    border: 2px solid aliceblue;
+    margin-top: calc(100vw/2.56);
+    width: calc(100vw/5.12);
+    margin: calc(100vw/64);
+    padding: calc(100vw/25.6);
+    border: calc(100vw/640) solid aliceblue;
   }
 
   .JAVA_IMG{
@@ -411,12 +412,13 @@ li {
   .container {
     display: grid;
     grid-template-rows: auto auto auto; /* Three rows of equal height */
+    position:absolute;
   }
 
   .item {
-    padding: 20px; /* Padding around grid items */
-    border: .5px solid aliceblue; /* Border around grid items */
-    width:450px;
+    padding: calc(100vw/64); /* Padding around grid items */
+    border: calc(100vw/2560) solid aliceblue; /* Border around grid items */
+    width:calc(100vw/2.844);
   }
 
   .tooltip {
@@ -451,18 +453,177 @@ li {
 
 .instruction_text
 {
+    position:absolute;
     font-family: Lucida Console, Courier New, monospace;
     color:whitesmoke;
-    margin-top:-156px;
-    font-size: 14px;
-    margin-left:50px;
+    top:calc(100vw/7.25);
+    font-size: calc(100vw/91.429);
+    left:calc(100vw/24);
 }
 
 .instruction_bar
 {
-    height:3px;
-    width: 270px;
+    position:absolute;
+    height:calc(100vw/426.667);
+    width: calc(100vw/4.741);
     background-color:darkgreen;
-    margin-left:100px;
-    margin-top:-60px;
+    left:calc(100vw/128);
+    top:calc(100vw/21.333);
+}
+
+.description_img {
+    width: calc(100vw/2.1333);
+    height: calc(100vw/3.2);
+  }
+
+.selfie_img {
+    width: calc(100vw/6.4);
+    height: calc(100vw/3.657);
+}
+
+.list_grid
+{
+    position: relative;
+    width:100vw;
+}
+
+.proficiency_grid
+{
+    position: relative;
+    width:100vw;
+    margin-top:calc(100vw/8.5333);
+}
+
+.ml_projects_grid
+{
+    position: relative;
+    width:100vw;
+    margin-top:calc(-100vw/75);
+}
+
+.independent_grid
+{
+    position: relative;
+    width:99vw;
+}
+
+.green-circle-button {
+    
+    position:absolute;
+    text-decoration: none; /* Remove default underline */
+    background-color:darkgreen;
+    left:calc(100vw/7.5); 
+    border-radius: 50%;
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
+    background-color: darkgreen; 
+    top:calc(100vw/8);
+}
+
+/* Hover effect for the button */
+.green-circle-button:hover {
+    background-color: rgb(1, 62, 1); /* Darker color on hover */
+}
+
+.red-circle-button {
+    position:absolute;
+    text-decoration: none; /* Remove default underline */
+    left:calc(100vw/7.5); 
+    border-radius: 50%;
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
+    background-color: red; 
+    top:calc(100vw/4.25);
+}
+
+/* Hover effect for the button */
+.red-circle-button:hover {
+    background-color: rgb(150, 2, 2); /* Darker color on hover */
+}
+
+.white-circle-button {
+    position:absolute;
+    text-decoration: none; /* Remove default underline */
+    left:calc(100vw/7.5); 
+    border-radius: 50%;
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
+    background-color: white; 
+    top:calc(100vw/2.85);
+}
+
+/* Hover effect for the button */
+.white-circle-button:hover {
+    background-color: rgb(196, 196, 196); /* Darker color on hover */
+}
+
+.intro_grid
+{
+    position: relative;
+    width:99vw;
+}
+
+.green-circle-button::after {
+    content: attr(title); /* Use the 'title' attribute content as tooltip text */
+    position: absolute;
+    top: 50%; /* Position the tooltip vertically centered */
+    left: 50%; /* Position the tooltip horizontally centered */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    padding: 6px 12px; /* Padding around the tooltip text */
+    border-radius: 4px; /* Rounded corners for the tooltip */
+    white-space: nowrap; /* Prevent tooltip text from wrapping */
+    z-index: 1; /* Ensure tooltip appears above the button */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    left:calc(100vw/12)
+}
+
+/* Show tooltip on hover */
+.green-circle-button:hover::after {
+    opacity: 1; /* Show tooltip when button is hovered over */
+}
+.red-circle-button::after {
+    content: attr(title); /* Use the 'title' attribute content as tooltip text */
+    position: absolute;
+    top: 50%; /* Position the tooltip vertically centered */
+    left: 50%; /* Position the tooltip horizontally centered */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    padding: 6px 12px; /* Padding around the tooltip text */
+    border-radius: 4px; /* Rounded corners for the tooltip */
+    white-space: nowrap; /* Prevent tooltip text from wrapping */
+    z-index: 1; /* Ensure tooltip appears above the button */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    left:calc(100vw/12)
+}
+
+/* Show tooltip on hover */
+.red-circle-button:hover::after {
+    opacity: 1; /* Show tooltip when button is hovered over */
+}
+
+.white-circle-button::after {
+    content: attr(title); /* Use the 'title' attribute content as tooltip text */
+    position: absolute;
+    top: 50%; /* Position the tooltip vertically centered */
+    left: 50%; /* Position the tooltip horizontally centered */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    padding: 6px 12px; /* Padding around the tooltip text */
+    border-radius: 4px; /* Rounded corners for the tooltip */
+    white-space: nowrap; /* Prevent tooltip text from wrapping */
+    z-index: 1; /* Ensure tooltip appears above the button */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    left:calc(100vw/12)
+}
+
+/* Show tooltip on hover */
+.white-circle-button:hover::after {
+    opacity: 1; /* Show tooltip when button is hovered over */
 }
