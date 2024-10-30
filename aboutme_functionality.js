@@ -2,15 +2,15 @@ window.onload = function generateStars() {
 
     var coordinates=[]
 
-  for(i =0; i<250; i++)
+  for(i =0; i<200; i++)
   {
     let x = Math.random() * window.innerWidth, y=Math.random() * window.innerHeight;
    
 
-    while((window.innerWidth/5.5 < x && x <  window.innerWidth/2.3)&&(window.innerHeight/2.4024 < y && y< innerHeight/1.375 || y == 0))
+    while(window.innerWidth/20 < x && x <  window.innerWidth/1.07)
     {
       x = Math.random() * window.innerWidth
-      y = Math.random() * window.innerHeight
+      y = Math.random() * window.innerHeight*2.5
       
     }
 
