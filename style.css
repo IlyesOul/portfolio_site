@@ -574,29 +574,28 @@ li {
   } 
   
   
-  .ML_IMG{
-    padding:1%;
-    /*background-color: rgb(133, 128, 36);*/
-    border-color: antiquewhite;
-    border-style: solid;
-    /* modify margin and padding here*/
-    padding: calc(100vw/42.667);
-    margin: calc(100vw/51.2);
-    width:calc(100vw/4.13);
-    margin-left: calc(100vw/25.6);
-    margin-top: calc(100vw/6.24);
-    font-family:'Spectral';
+  .ML_IMG {
+    padding: calc(100vw / 42.667);
+    margin: calc(100vw / 51.2);
+    width: calc(100vw / 5.12);
+    font-family: 'Spectral';
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size:50%;
-    border-color:aliceblue;
-    margin-top: calc(100vw/2.56);
-    width: calc(100vw/5.12);
-    margin: calc(100vw/64);
-    padding: calc(100vw/25.6);
-    border: calc(100vw/640) solid aliceblue;
-  }
+    font-size: 50%;
+    display: inline-block; /* Makes sure the container behaves like an inline element */
+    overflow: hidden; /* Ensures the image doesn’t overflow when scaling */
+}
+
+.ML_IMG img {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.ML_IMG:hover img {
+    transform: scale(1.05); /* Scales the image by 10% on hover */
+}
+
 
   .JAVA_IMG{
     padding:1%;
@@ -633,6 +632,7 @@ li {
     padding: calc(100vw/64); /* Padding around grid items */
     border: calc(100vw/2560) solid aliceblue; /* Border around grid items */
     width:calc(100vw/2.844);
+    border-radius:5%;
   }
 
   .tooltip {
