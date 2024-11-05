@@ -265,13 +265,13 @@ a:visited{
 }
 
 .white_text {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.25s ease-in-out;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #333;
+    background-color: black;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -655,8 +655,8 @@ li {
   }
 
 .selfie_img {
-    width: calc(100vw/6.4);
-    height: calc(100vw/3.657);
+    width: calc(100vw/5.4);
+    height: calc(100vw/3.3);
 }
 
 .list_grid

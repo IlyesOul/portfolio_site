@@ -4,7 +4,7 @@ window.onload = function generateStars() {
 
   for(i =0; i<200; i++)
   {
-    let x = Math.random() * window.innerWidth, y=Math.random() * window.innerHeight;
+    let x = Math.random() * window.innerWidth, y=Math.random()*1.15 * window.innerHeight*3.25;
    
 
     while(window.innerWidth/20 < x && x <  window.innerWidth/1.07)
