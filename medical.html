@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
-        <title>Intellivest</title>
+        <title>ML Disease Assessment</title>
         <link rel = "stylesheet" type = "text/css"href = "style.css" />
         <meta name="viewport" content="width=device-width">
         <script src="projects_temp_functionality.js"></script>
@@ -19,8 +19,8 @@
     <body style = "background-color:rgb(26, 25, 25); position:relative">
 
         <!--Header-->
-        <p style = "position:absolute;font-family: Martian Mono; left:calc(100vw/2.45); color:white; font-size:calc(100vw/35); top:calc(100vw/80)">
-            Intellivest
+        <p style = "position:absolute;font-family: Martian Mono; left:calc(100vw/6); color:white; font-size:calc(100vw/35); top:calc(100vw/80)">
+            Heart Disease Prediction & Treatment
         </p>
       <!--Images-->
         <p style = "position:absolute;font-family: Martian Mono; left: calc(100vw/2.27);color:white; font-size:calc(100vw/65); top:calc(100vw/8.533);">
@@ -29,8 +29,8 @@
 
         <div class = "red_bar" style = "position:absolute; top:calc(100vw/5.15); left: calc(100vw/2.85);width:calc(100vw/6.4); background-color: blue;"></div>
             
-        <img src = "Images/Flowchart.png" style = "position:absolute; width:calc(100vw/2.56); height:calc(100vw/6); left:calc(100vw/3.25); top:calc(100vw/5); border-radius: 5%;">
-            <p style = "position:absolute; font-family: Martian Mono; left:calc(100vw/2.85); color:white; font-size:calc(100vw/125); top:calc(100vw/2.65); width:calc(100vw/3)">Flowchart diagram of program's prompts that are used to understand the user's financial situation</p>
+        <img src = "Images/Medical_Program.png" style = "position:absolute; width:calc(100vw/2.56); height:calc(100vw/6); left:calc(100vw/3.25); top:calc(100vw/5); border-radius: 5%;">
+            <p style = "position:absolute; font-family: Martian Mono; left:calc(100vw/2.85); color:white; font-size:calc(100vw/125); top:calc(100vw/2.65); width:calc(100vw/3)">Code-generated Google search of a disease the program predicted for a user</p>
         <!--Description Text-->
         <p style = "position:absolute;font-family: Martian Mono; left:calc(100vw/6.4); color:white; font-size:large; margin-top:calc(100vw/2.226);">
             Program Description
@@ -38,8 +38,8 @@
         <div class = "red_bar" style = "position:absolute; top:calc(100vw/1.954); margin-left:calc(100vw/7.11);width:calc(100vw/5.446); background-color: blue;"></div>
 
         <!--Description of behaviour-->
-        <p style = "position:absolute;font-family: Martian Mono;  color:yellow; font-size:smaller; top:calc(100vw/2.05); left:calc(100vw/17.1); width:calc(100vw/2.56)">The initial phase of the program is predicting the user's credit score; this is done through a series of prompts whose responses are used to train a Random Forest Ensemble model that will predict the score.</p>
-        <p style = "position:absolute;font-family: Martian Mono;  color:yellow; font-size:smaller; top:calc(100vw/1.73); left:calc(100vw/17.1); width:calc(100vw/2.56)">With the predicted score, the program will produce a series of questions for the user to determine whether they wish to invest, how much cash they'd be willing to input, and how large of a loan, if any at all, they're willing to take for their investment. Based on their credit score and the answers to listed prompts, the user is given bespoke investment advisory</p>
+        <p style = "position:absolute;font-family: Martian Mono;  color:yellow; font-size:smaller; top:calc(100vw/2.05); left:calc(100vw/17.1); width:calc(100vw/2.56)">I worked on this program with a friend under the plan that he'd work on the app-frontend and I the backend. Essentially, the program will begin by prompting the user for a plethorea of medical information (such as age, blood pressure, etc.) and then it will analyze the data and predict whether the user has a high or low chance of having the disease</p>
+        <p style = "position:absolute;font-family: Martian Mono;  color:yellow; font-size:smaller; top:calc(100vw/1.73); left:calc(100vw/17.1); width:calc(100vw/2.56)">Once the presence of a disease has been predicted, the program will use this assessment, in conjunction with the provided information, to determine which specific disease the user has by doing an automated Google search. Once the condition is identified, the program will preform another search to identify a treatment plan and provide the user with it </p>
 
         <!--Technologies Used-->
         <p style = "position:absolute;font-family: Martian Mono; color:white; left:calc(100vw/1.45); color:white; font-size:large; margin-top:calc(100vw/2.226);">
@@ -59,16 +59,19 @@
                 Numpy & Pandas
             </li>
             <li style = "font-family: Martian Mono;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
-                Objects
+                Beautiful Soup web scraping
             </li>
             <li style = "font-family: Martian Mono;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
                 tkinter Desktop Output library
             </li>
+            <li style = "font-family: Martian Mono;  color:white; font-size:small; margin-top:calc(100vw/36.57);margin-left:calc(100vw/1.6);margin-right:calc(-100vw/25.6);">
+                Google search engine
+            </li>
         </ol>
     </div>
 
-    <a  target = "_blank" href= "https://github.com/IlyesOul/Blueprint-2024" style = "position:absolute;font-family: Martian Mono;  color:white; font-size:large; left: calc(100vw/3.3);top:calc(100vw/1.3); padding-bottom:calc(100vw/25.6)"> 
-        Github Repository (Code stored in "yes_option" file)
+    <a  target = "_blank" href= "https://github.com/IlyesOul/IO_TG_Medical_Program" style = "position:absolute;font-family: Martian Mono;  color:white; font-size:large; left: calc(100vw/3.3);top:calc(100vw/1.3); padding-bottom:calc(100vw/25.6)"> 
+        Github Repository 
     </a>
     </body>
 </html>
