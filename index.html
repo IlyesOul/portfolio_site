@@ -70,7 +70,7 @@
             <img src="Images/information.png" style = "width:calc(100vw/23); height: calc(100vw/23);" alt="About this website" class="hover-effect">
         </div>
 
-        <div class = "blue_bar" style = "top:calc(100vw/3.7); width:calc(100vw/1.55); left:calc(100vw/5); background-color: gold;"></div>
+        <div class = "blue_bar" style = "top:calc(100vw/3.75); width:calc(100vw/1.55); left:calc(100vw/5); background-color: gold;"></div>
 
         
         <div class = "intro_text" style = "top:calc(100vw/3.6); font-weight: 100; left:calc(100vw/4.5)">
@@ -82,8 +82,42 @@
        <div class = "intro_text" style = "top:calc(100vw/3.6); left:calc(100vw/1.5)">
             game development
         </div> 
-        
 
+        <audio id="audio" src="star_wars_song.mp3" preload="auto"></audio>
+        
+        <script>
+            window.addEventListener('load', function () {
+                var audio = document.getElementById('audio');
+                var fadeOutDuration = 2; // Duration of the fade-out in seconds
+    
+                // Play the audio when the page loads
+                audio.play();
+    
+                // Function to fade out the audio
+                function fadeOut() {
+                    var fadeInterval = 50; // Interval to decrease the volume (in milliseconds)
+                    var fadeStep = 1 / (fadeOutDuration * 1000 / fadeInterval); // How much to decrease the volume each interval
+                    var volume = 1; // Initial volume
+    
+                    var fadeIntervalID = setInterval(function () {
+                        volume -= fadeStep; // Decrease volume
+    
+                        if (volume <= 0) {
+                            clearInterval(fadeIntervalID); // Stop fading when the volume reaches 0
+                            audio.pause(); // Pause the audio
+                            audio.currentTime = 0; // Reset to the beginning
+                        } else {
+                            audio.volume = volume; // Update the volume
+                        }
+                    }, fadeInterval);
+                }
+    
+                // Stop the sound after 5 seconds and start fading out
+                setTimeout(function () {
+                    fadeOut();
+                }, 5000);
+            });
+        </script>
 
         <!-- <div class = "blue_bar" style = "width:calc(100vw/213.33);
     height: calc(100vw/4); left:calc(100vw/3)"></div> -->
