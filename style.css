@@ -6,7 +6,7 @@
 .star-wars-text {
     position:absolute;
     font-family:'StarWars';
-    font-size: 6rem; /* Adjust as needed */
+    font-size: calc(100vw/15); /* Adjust as needed */
     text-transform: uppercase;
     letter-spacing: 2px;
     color: gold;
@@ -511,6 +511,16 @@ html, body {
 
 
 .intro_text
+{
+    position:absolute;
+    font-family: 'Changa', sans-serif;
+    font-size:large;
+    color:rgb(164, 125, 25);
+    left:calc(100vw/5.5);
+    animation: .1s ease-out 0s 1 openUp;
+}
+
+.main_page_text
 {
     position:absolute;
     font-family: 'Changa', sans-serif;

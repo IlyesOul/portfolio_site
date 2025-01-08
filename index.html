@@ -72,16 +72,6 @@
 
         <div class = "blue_bar" style = "top:calc(100vw/3.75); width:calc(100vw/1.55); left:calc(100vw/5); background-color: gold;"></div>
 
-        
-        <div class = "intro_text" style = "top:calc(100vw/3.6); font-weight: 100; left:calc(100vw/4.5)">
-            software development
-        </div>
-        <div class = "intro_text" style = "top:calc(100vw/3.6); left:calc(100vw/2.2)">
-            machine learning
-        </div>
-       <div class = "intro_text" style = "top:calc(100vw/3.6); left:calc(100vw/1.5)">
-            game development
-        </div> 
 
         <a href="https://github.com/IlyesOul" target = "_blank" class="image-link">
             <img src="Images/github.png" alt="My GitHub" style="position:absolute;width:calc(100vw/10); left:calc(100vw/1.1); top:calc(-100vw/50)">
@@ -97,13 +87,13 @@
         <div class = "blue_bar" style = "top:calc(100vw/3.75); width:calc(100vw/1.55); left:calc(100vw/5); background-color: gold;"></div>
 
         
-        <div class = "intro_text" style = "top:calc(100vw/3.6); font-weight: 100; left:calc(100vw/4.5)">
+        <div class = "main_page_text" style = "top:calc(100vw/3.6); font-weight: 100; left:calc(100vw/4.5)">
             software development
         </div>
-        <div class = "intro_text" style = "top:calc(100vw/3.6); left:calc(100vw/2.2)">
+        <div class = "main_page_text" style = "top:calc(100vw/3.6); left:calc(100vw/2.2)">
             machine learning
         </div>
-       <div class = "intro_text" style = "top:calc(100vw/3.6); left:calc(100vw/1.5)">
+       <div class = "main_page_text" style = "top:calc(100vw/3.6); left:calc(100vw/1.5)">
             game development
         </div> 
 
@@ -113,13 +103,13 @@
         
         <script>
             window.addEventListener('load', function () {
-    const audio = document.getElementById('myAudio');
+                const audio = document.getElementById('myAudio');
                 const playButton = document.getElementById('playBtn');
 
                 playButton.addEventListener('click', () => {
                 audio.play().catch(error => {
                  console.log("Error playing audio:", error);
-                });
+            });
 
         // Function to fade out the audio
         function fadeOut() {
