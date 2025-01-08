@@ -14,6 +14,20 @@
     top:calc(100vw/6.9)
 }
 
+button
+{
+    position:absolute;
+    background-color: #18181C;
+    border-color: rgb(164, 125, 25);
+    color:rgb(164, 125, 25);
+    text-align: center;
+    font-size:x-large;
+    font-family: 'Changa', sans-serif;
+    left: calc(100vw/2.35);
+    top:calc(100vw/2.75);
+    border-radius:5%;
+}
+
 h1 {
     color: yellow;
     margin-left:30px;

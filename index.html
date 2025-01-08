@@ -83,65 +83,74 @@
             game development
         </div> 
 
-        <audio id="audio" src="star_wars_song.mp3" preload="auto"></audio>
+        <a href="https://github.com/IlyesOul" target = "_blank" class="image-link">
+            <img src="Images/github.png" alt="My GitHub" style="position:absolute;width:calc(100vw/10); left:calc(100vw/1.1); top:calc(-100vw/50)">
+        </a>
+
+        <div class="hover-container" style = "position:absolute; left:calc(100vw/1.14); top:calc(100vw/100)">
+            <div class="info">
+                This website was built from scratch using HTML, CSS, and JS; it is hosted by a Github repository!
+            </div>
+            <img src="Images/information.png" style = "width:calc(100vw/23); height: calc(100vw/23);" alt="About this website" class="hover-effect">
+        </div>
+
+        <div class = "blue_bar" style = "top:calc(100vw/3.75); width:calc(100vw/1.55); left:calc(100vw/5); background-color: gold;"></div>
+
+        
+        <div class = "intro_text" style = "top:calc(100vw/3.6); font-weight: 100; left:calc(100vw/4.5)">
+            software development
+        </div>
+        <div class = "intro_text" style = "top:calc(100vw/3.6); left:calc(100vw/2.2)">
+            machine learning
+        </div>
+       <div class = "intro_text" style = "top:calc(100vw/3.6); left:calc(100vw/1.5)">
+            game development
+        </div> 
+
+        <button id="playBtn">unleash the experience</button>
+        <audio id="myAudio" source src="star_wars_song.mp3" type="audio/mp3">
+        </audio>
         
         <script>
             window.addEventListener('load', function () {
-                var audio = document.getElementById('audio');
-                var fadeOutDuration = 2; // Duration of the fade-out in seconds
-    
-                // Play the audio when the page loads
-                audio.play();
-    
-                // Function to fade out the audio
-                function fadeOut() {
-                    var fadeInterval = 50; // Interval to decrease the volume (in milliseconds)
-                    var fadeStep = 1 / (fadeOutDuration * 1000 / fadeInterval); // How much to decrease the volume each interval
-                    var volume = 1; // Initial volume
-    
-                    var fadeIntervalID = setInterval(function () {
-                        volume -= fadeStep; // Decrease volume
-    
-                        if (volume <= 0) {
-                            clearInterval(fadeIntervalID); // Stop fading when the volume reaches 0
-                            audio.pause(); // Pause the audio
-                            audio.currentTime = 0; // Reset to the beginning
-                        } else {
-                            audio.volume = volume; // Update the volume
-                        }
-                    }, fadeInterval);
+    const audio = document.getElementById('myAudio');
+                const playButton = document.getElementById('playBtn');
+
+                playButton.addEventListener('click', () => {
+                audio.play().catch(error => {
+                 console.log("Error playing audio:", error);
+                });
+
+        // Function to fade out the audio
+        function fadeOut() {
+            const fadeOutDuration = 5;  // Fade out duration in seconds
+            const fadeInterval = 50;    // Interval time in milliseconds
+            let currentVolume = audio.volume;  // Start with current volume
+            const fadeStep = currentVolume / (fadeOutDuration * 1000 / fadeInterval);  // Volume decrement per interval
+
+            // Set an interval to gradually decrease the volume
+            const fadeIntervalID = setInterval(function () {
+                if (currentVolume > 0) {
+                    currentVolume -= fadeStep;  // Reduce volume
+                    audio.volume = currentVolume;  // Set new volume
+                } else {
+                    clearInterval(fadeIntervalID);  // Clear interval once volume reaches 0
+                    audio.pause();  // Pause the audio
+                    audio.currentTime = 0;  // Reset audio to the beginning
                 }
-    
-                // Stop the sound after 5 seconds and start fading out
-                setTimeout(function () {
-                    fadeOut();
-                }, 5000);
-            });
+            }, fadeInterval);
+        }
+
+        // Stop the sound after 5 seconds and start fading out
+        setTimeout(function () {
+            fadeOut();  // Start fading out after 5 seconds
+        }, 5000);
+    });
+});
+
+
         </script>
 
-        <!-- <div class = "blue_bar" style = "width:calc(100vw/213.33);
-    height: calc(100vw/4); left:calc(100vw/3)"></div> -->
-        
-
-     
-     <!-- <div class = "instruction_text">
-        About me
-    </div>  
-    
-    <div class = "instruction_bar" style = "left:calc(100vw/26);top: calc(100vw/6.5); width:calc(100vw/16)"></div>
-
-    <div class = "instruction_text" style = "top:calc(100vw/4.05); left:calc(100vw/29);">
-       My Projects
-    </div>  
-    
-    <div class = "instruction_bar" style = "left:calc(100vw/35);top: calc(100vw/3.8); width:calc(100vw/11.636); background-color:red"></div>
-
-    <div class = "instruction_text" style = "top:calc(100vw/2.75); left:calc(100vw/250); font-size:calc(100vw/98.462);">
-        ML Independent Study
-     </div>   
-     
-    <div class = "instruction_bar" style = "left:calc(100vw/500);top: calc(100vw/2.65); width:calc(100vw/8); background-color:whitesmoke "></div>-->
-    </div>
 
     
     </body>
