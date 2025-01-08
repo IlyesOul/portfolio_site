@@ -515,7 +515,7 @@ html, body {
     position:absolute;
     font-family: 'Changa', sans-serif;
     font-size:large;
-    color:rgb(164, 125, 25);
+    color:rgb(183, 181, 181);
     left:calc(100vw/5.5);
     animation: .1s ease-out 0s 1 openUp;
 }
