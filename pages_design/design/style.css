@@ -1,0 +1,891 @@
+@font-face {
+    font-family: "StarWars";
+    src: url('SFDistantGalaxy.woff');
+}
+
+.star-wars-text {
+    position:absolute;
+    font-family:'StarWars';
+    font-size: calc(100vw/15); /* Adjust as needed */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gold;
+    left:calc(100vw/5.4);
+    top:calc(100vw/6.9)
+}
+
+button
+{
+    position:absolute;
+    background-color: #18181C;
+    border-color: rgb(164, 125, 25);
+    color:rgb(164, 125, 25);
+    text-align: center;
+    font-size:x-large;
+    font-family: 'Changa', sans-serif;
+    left: calc(100vw/2.35);
+    top:calc(100vw/2.75);
+    border-radius:5%;
+}
+
+h1 {
+    color: yellow;
+    margin-left:30px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-left:30px;
+}
+
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-weight: 100;
+    text-align: center;
+    font-size: large;
+    color:yellow;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.a{
+    text-align: center;
+    align-content: center;
+}
+
+.header{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    border-style: dashed;
+    border:dodgerblue;
+}
+
+.header2{
+    background-color: cadetblue;
+    /*display:grid;
+    align-self:left;
+    text-align: left;
+    justify-content: left;*/
+    border-style:ridge;
+    width: 12in;
+}
+
+.site-description{
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    border-style: groove;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ul{
+    color: chocolate;
+}
+
+.games{
+    border: 2px solid blue;
+    border-radius:  5px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.images{
+    border:black;
+}
+.header * {
+    border: solid;
+}
+
+.menu{
+    margin-right: 20px;
+}
+
+.menu a{
+    margin-left: 20px;
+}
+
+a:link{
+    color: honeydew;
+}
+
+a:visited{
+    color: blue;
+}
+
+.item{
+    position: relative;
+}
+
+.dropbtn {
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(59, 59, 158);
+    color: yellow;
+    padding: 2px;
+    font-size: 16px;
+    border: tomato;
+    border-style:groove;
+    height: 2in;
+    width: 3in;
+    float:right;
+    
+  }
+
+  .dropdown {
+    align-content: right;
+    position: relative;
+    display: inline-block;
+    align-self: right;
+  }
+
+  .dropdown-content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    display: none;
+    align-content:space-between;
+    background-color: yellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    align-content: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration:grey;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display:grid;}
+
+  .dropdown:hover .dropbtn {background-color: blue;}
+
+.item p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.learn_more_button
+{
+    border-radius: 5%;
+    border:solid; 
+    border-color: rgb(52, 52, 255);
+    height:calc(100vw/35);
+    width:calc(100vw/9);
+    font-family:'Changa';
+    color:rgb(65, 65, 252);
+    position:absolute;
+    left:calc(100vw/5.25);
+    top:calc(100vw/2.85);
+    text-align: center;
+    font-size: calc(100vw/90); 
+    background-color: transparent;
+    animation: .1s ease-out 0s 1 openUp;
+}
+
+.item:hover img{
+    opacity:0.66;
+}
+
+
+.img{
+    text-align: center;
+}
+
+.item:hover p{
+    opacity:1;
+}
+
+.background{
+    background-color: black;
+}
+
+.video{
+    text-align: center;
+}
+
+.ul{
+    text-align: center;
+    color:white;
+}
+
+.email{
+    text-align: left;
+}
+
+.diagnostic{
+    text-align: left;
+}
+
+.ad{
+    text-align: right;
+    align-content:space-around;
+}
+
+
+.white_circle
+{
+    border-radius: 50%;
+    margin-left:calc(100vw/4.5);
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
+    background-color: whitesmoke; 
+    margin-top:calc(100vw/17.067);
+}
+
+.white_circle :hover .white_text
+{   
+    opacity: 1;
+}
+
+.white_text{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.transculent_circle {
+    position: absolute;
+    border-radius: 50%;
+    left: calc(100vw / 35);
+    width: calc(100vw / 40);
+    height: calc(100vw / 40);
+    background-color: #18181C;
+    border-color: aliceblue;
+    border-style: solid;
+    transition: background-color .25s ease-in-out;
+    cursor: pointer; /* Optional: to indicate it's interactive */
+    overflow:hidden;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    transition: opacity 0.1s ease-in-out; /* Faster appearance transition */
+    pointer-events: none; /* Ensures the tooltip doesn't interfere with hovering */
+}
+
+
+.transculent_circle .info {
+    font-family: 'Changa', sans-serif;
+    display: none;
+    position: absolute;
+    top: calc(100vw/20);
+    width:calc(100vw/5);
+    left: calc(-100vw/10);
+    background-color: rgba(68, 66, 66, 0.7);
+    color: white;
+    padding: 10px;
+    width: 500%;
+    box-sizing: border-box;
+    z-index: 10;
+    font-size:small;
+    border-radius: 5%;
+}
+
+/* Display the info on hover */
+.transculent_circle:hover .info {
+    display: block;
+}
+
+.transculent_circle:hover {
+    background-color: aliceblue;
+}
+
+.transculent_circle:hover .white_text {
+    opacity: 1;
+}
+
+.white_text {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    left:calc(100vw/10);
+}
+
+.red_circle
+{
+    border-radius: 50%;
+    margin-left:calc(100vw/4.5);
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
+    background-color: red; 
+    margin-top:calc(100vw/17.067);
+}
+
+.green_circle
+{
+    border-radius: 50%;
+    margin-left:calc(100vw/4.5);
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
+    background-color: darkgreen; 
+    margin-top:calc(100vw/7.31428);
+}
+
+@keyframes openUp {
+    0% {
+      transform:scaleY(0%);
+    }
+    100% {
+        transform:scaleY(100%);
+    }
+  }
+
+.title
+{
+    font-family: 'Martian Mono';
+    margin-top:calc(-100vw/6.7638);
+    color:white;
+    font-size: calc(100vw/25.6);
+    animation: .1s ease-out 0s 1 openUp;
+}
+
+/* Basic styling for the image */
+.image-link img {
+    width: 300px; /* Adjust as needed */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect */
+.image-link:hover img {
+    transform: scale(1.1); /* Slightly zoom in */
+    filter: brightness(2); /* Darken the image */
+}
+
+/* Optional: Style the anchor tag itself */
+.image-link {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.image-link:hover {
+    border-color: #000; /* Add a border on hover */
+}
+
+/* Container to hold the image and info */
+.hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Basic styling for the image */
+.hover-effect {
+    width: 300px; /* Adjust as needed */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hidden info initially */
+.hover-container .info {
+    font-family: 'Changa', sans-serif;
+    display: none;
+    position: absolute;
+    top: calc(100vw/20);
+    width:calc(100vw/5);
+    left: calc(-100vw/10);
+    background-color: rgba(68, 66, 66, 0.7);
+    color: white;
+    padding: 10px;
+    width: 500%;
+    box-sizing: border-box;
+    z-index: 10;
+    font-size:small;
+    border-radius: 5%;
+}
+
+/* Hover effect */
+.hover-container:hover .hover-effect {
+    transform: scale(1.1); /* Slightly zoom in */
+    filter: brightness(1.2); /* Brighten the image */
+}
+
+/* Display the info on hover */
+.hover-container:hover .info {
+    display: block;
+}
+
+
+.learn_more{
+    border-radius: 5%;
+    border:solid;
+    border-color: blue;
+    height:calc(100vw/50);
+    width:calc(100vw/12);
+    font-family:'Changa';
+    color:blue;
+    position:absolute;
+    left:calc(100vw/4.25);
+    top:calc(100vw/2.75);
+    text-align: center;
+    font-size: calc(100vw/90);
+}
+
+
+.blue_bar
+{
+    position:absolute;
+    height:calc(100vw/300);
+    width: calc(100vw/4);
+    background-color:blue;
+    left:calc(100vw/5.5);
+    top:calc(100vw/3.5);
+    animation: .1s ease-out 0s 1 openUp;
+}
+
+.green_bar
+{
+    height:calc(100vw/426.667);
+    width: calc(100vw/4);
+    background-color:blue;
+    margin-left:calc(100vw/12.8);
+    margin-top:calc(-100vw/21.3333);
+}
+
+.red_bar
+{
+    height:calc(100vw/426.67);
+    width: calc(100vw/4.74);
+    background-color:red;
+    margin-left:calc(100vw/11.636);
+    margin-top:calc(-100vw/25.6);
+}
+
+.white_bar
+{
+    height:calc(100vw/426.7);
+    width: calc(100vw/4.74);
+    background-color:whitesmoke;
+    margin-left:calc(100vw/11.64);
+    margin-top:calc(-100vw/25.6);
+}
+
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+
+.intro_text
+{
+    position:absolute;
+    font-family: 'Changa', sans-serif;
+    font-size:large;
+    color:rgb(183, 181, 181);
+    left:calc(100vw/5.5);
+    animation: .1s ease-out 0s 1 openUp;
+}
+
+.main_page_text
+{
+    position:absolute;
+    font-family: 'Changa', sans-serif;
+    font-size:x-large;
+    color:rgb(164, 125, 25);
+    left:calc(100vw/2.5);
+    animation: .1s ease-out 0s 1 openUp;
+}
+
+.blink
+{
+    position:absolute;
+    width:calc(100vw/200);
+    height:calc(100vw/200);
+    animation: blinker 1.5s linear infinite;
+    background-color: #E6E9EA;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.learn_more_box
+{
+    border-color:rgb(157, 3, 3);
+    border-style: solid;
+    border-radius: 5%;
+    font-size:17px;
+    color:rgb(157, 3, 3);
+    margin-top:55px;
+    margin-left:275px;
+    font-family: '"'Martian Mono';';
+    width:150px;
+    text-align:center;
+    height:35px;
+    border-width:thin;
+    font-weight:550;
+    vertical-align: middle;
+    line-height: 35px;
+}
+
+.learn_more_box :hover {background-color: rgb(177, 81, 81); opacity: 25%;}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 25px solid #ffffff;
+    margin-left:65px;
+}
+
+.scroll_bar
+{
+    width: 5px;
+    height:50px;
+    background-color: #ffffff;
+    margin-left:68px;
+    margin-top:-75px;
+}
+
+li {
+    list-style:square;
+    margin-left:calc(100vw/42.7); 
+    margin-top:calc(100vw/28.4); 
+    font-family: '"'Martian Mono';'; 
+    font-size:calc(100vw/64); 
+    color:rgb(183, 181, 181); 
+    margin-right:calc(100vw/1.41)
+ }
+
+ .battery {
+    border: calc(100vw/426.7) solid #333;
+    width: calc(100vw/32);
+    height: calc(100vw/5.12);
+    padding: calc(100vw/640);
+    border-radius: calc(100vw/320);
+    position: relative;
+    margin: calc(100vw/85.33);
+    border-color:aliceblue;
+    transform:rotate(90deg);
+ }
+
+ .batteryLevel {
+    border-radius: calc(100vw/640);
+    background-color: #73AD21;
+  } 
+  
+  
+  .ML_IMG {
+    padding: calc(100vw / 42.667);
+    margin: calc(100vw / 51.2);
+    width: calc(100vw / 5.12);
+    font-family: 'Spectral';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50%;
+    display: inline-block; /* Makes sure the container behaves like an inline element */
+    overflow: hidden; /* Ensures the image doesn’t overflow when scaling */
+}
+
+.ML_IMG img {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.ML_IMG:hover img {
+    transform: scale(1.05); /* Scales the image by 10% on hover */
+}
+
+
+  .JAVA_IMG{
+    padding:1%;
+    /*background-color: rgb(133, 128, 36);*/
+    border-color: antiquewhite;
+    border-style: solid;
+    /* modify margin and padding here*/
+    padding: 30px;
+    margin: 25px;
+    width:500px;
+    margin-left: 50px;
+    margin-top: 205px;
+    font-family:'Spectral';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:50%;
+    border-color:aliceblue;
+    margin-top: 500px;
+    width: 250px;
+    margin: 20px;
+    padding: 50px;
+    border: 2px solid aliceblue;
+  }
+
+
+  .container {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Three rows of equal height */
+    position:absolute;
+  }
+
+  .item {
+    padding: calc(100vw/64); /* Padding around grid items */
+    border: calc(100vw/2560) solid aliceblue; /* Border around grid items */
+    width:calc(100vw/2.844);
+    border-radius:5%;
+  }
+
+  .tooltip {
+  margin-left:110px;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+  color:green;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 125px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  margin-left:25px;
+  margin-top:-7px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.instruction_text
+{
+    position:absolute;
+    font-family: Lucida Console, Courier New, monospace;
+    color:whitesmoke;
+    top:calc(100vw/7.25);
+    font-size: calc(100vw/91.429);
+    left:calc(100vw/24);
+}
+
+.instruction_bar
+{
+    position:absolute;
+    height:calc(100vw/426.667);
+    width: calc(100vw/4.741);
+    background-color:darkgreen;
+    left:calc(100vw/128);
+    top:calc(100vw/21.333);
+}
+
+.description_img {
+    width: calc(100vw/2.1333);
+    height: calc(100vw/3.2);
+    animation: .1s ease-out 0s 1 openUp;
+  }
+
+.selfie_img {
+    width: calc(100vw/5.4);
+    height: calc(100vw/3.3);
+}
+
+.list_grid
+{
+    position: relative;
+    width:100vw;
+}
+
+.list_grid_aboutme
+{
+    position: relative;
+}
+
+.proficiency_grid
+{
+    position: relative;
+    width:100vw;
+    margin-top:calc(100vw/8.5333);
+}
+
+.ml_projects_grid
+{
+    position: relative;
+    width:100vw;
+    margin-top:calc(-100vw/75);
+}
+
+.independent_grid
+{
+    position: relative;
+    width:99vw;
+}
+
+.green-circle-button {
+    
+    position:absolute;
+    text-decoration: none; /* Remove default underline */
+    background-color:darkgreen;
+    left:calc(100vw/7.5); 
+    border-radius: 50%;
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
+    background-color: darkgreen; 
+    top:calc(100vw/8);
+}
+
+/* Hover effect for the button */
+.green-circle-button:hover {
+    background-color: rgb(1, 62, 1); /* Darker color on hover */
+}
+
+.red-circle-button {
+    position:absolute;
+    text-decoration: none; /* Remove default underline */
+    left:calc(100vw/7.5); 
+    border-radius: 50%;
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
+    background-color: red; 
+    top:calc(100vw/4.25);
+}
+
+/* Hover effect for the button */
+.red-circle-button:hover {
+    background-color: rgb(150, 2, 2); /* Darker color on hover */
+}
+
+.white-circle-button {
+    position:absolute;
+    text-decoration: none; /* Remove default underline */
+    left:calc(100vw/7.5); 
+    border-radius: 50%;
+    width: calc(100vw/28.444);
+    height: calc(100vw/28.444);
+    background-color: white; 
+    top:calc(100vw/2.85);
+}
+
+/* Hover effect for the button */
+.white-circle-button:hover {
+    background-color: rgb(196, 196, 196); /* Darker color on hover */
+}
+
+.intro_grid
+{
+    position: relative;
+    width:99vw;
+}
+
+.green-circle-button::after {
+    content: attr(title); /* Use the 'title' attribute content as tooltip text */
+    position: absolute;
+    top: 50%; /* Position the tooltip vertically centered */
+    left: 50%; /* Position the tooltip horizontally centered */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    padding: 6px 12px; /* Padding around the tooltip text */
+    border-radius: 4px; /* Rounded corners for the tooltip */
+    white-space: nowrap; /* Prevent tooltip text from wrapping */
+    z-index: 1; /* Ensure tooltip appears above the button */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    left:calc(100vw/12)
+}
+
+/* Show tooltip on hover */
+.green-circle-button:hover::after {
+    opacity: 1; /* Show tooltip when button is hovered over */
+}
+.red-circle-button::after {
+    content: attr(title); /* Use the 'title' attribute content as tooltip text */
+    position: absolute;
+    top: 50%; /* Position the tooltip vertically centered */
+    left: 50%; /* Position the tooltip horizontally centered */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    padding: 6px 12px; /* Padding around the tooltip text */
+    border-radius: 4px; /* Rounded corners for the tooltip */
+    white-space: nowrap; /* Prevent tooltip text from wrapping */
+    z-index: 1; /* Ensure tooltip appears above the button */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    left:calc(100vw/12)
+}
+
+/* Show tooltip on hover */
+.red-circle-button:hover::after {
+    opacity: 1; /* Show tooltip when button is hovered over */
+}
+
+.white-circle-button::after {
+    content: attr(title); /* Use the 'title' attribute content as tooltip text */
+    position: absolute;
+    top: 50%; /* Position the tooltip vertically centered */
+    left: 50%; /* Position the tooltip horizontally centered */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    padding: 6px 12px; /* Padding around the tooltip text */
+    border-radius: 4px; /* Rounded corners for the tooltip */
+    white-space: nowrap; /* Prevent tooltip text from wrapping */
+    z-index: 1; /* Ensure tooltip appears above the button */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    left:calc(100vw/12)
+}
+
+/* Show tooltip on hover */
+.white-circle-button:hover::after {
+    opacity: 1; /* Show tooltip when button is hovered over */
+}
+
