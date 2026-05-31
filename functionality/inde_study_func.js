@@ -44,8 +44,7 @@ for (i = 0; i < coordinates.length; i++){
         star.style.left = coordinates[i][0] + "px";
         star.style.top = coordinates[i][1] + "px";
       
-        var canvas = getPageCanvas();
-        (canvas || document.body).appendChild(star);
+        document.body.appendChild(star);
 
 }
 

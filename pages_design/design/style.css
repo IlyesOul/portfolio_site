@@ -1,8 +1,5 @@
 :root {
-    --design-w: 2560;
-    --design-h: 1440;
-    --page-scale: min(calc(100vw / var(--design-w)), calc(100vh / var(--design-h)));
-    --page-w: calc(var(--design-w) * var(--page-scale));
+    --page-w: 100vw;
 }
 
 @font-face {
@@ -46,25 +43,12 @@ h2 {
     margin-left:30px;
 }
 
-html {
-    display: flex;
-    justify-content: center;
-}
-
 html, body {
     overflow-x: hidden;
-    overflow-y: auto;
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 100%;
-}
-
-body {
-    position: relative;
-    width: var(--page-w);
-    max-width: 100vw;
-    min-height: 100vh;
+    height: 100%;
 }
 
 p{
@@ -525,6 +509,10 @@ a:visited{
     margin-top:calc(-1 * var(--page-w) /25.6);
 }
 
+html, body {
+    height: 100%;
+    overflow: auto;
+}
 
 .intro_text
 {
@@ -747,14 +735,11 @@ li {
 {
     position: relative;
     width: var(--page-w);
-    min-height: calc(var(--page-w) / 0.62);
 }
 
 .list_grid_aboutme
 {
     position: relative;
-    width: var(--page-w);
-    min-height: calc(var(--page-w) / 0.62);
 }
 
 .proficiency_grid
@@ -775,7 +760,6 @@ li {
 {
     position: relative;
     width: calc(var(--page-w) * 0.99);
-    min-height: calc(var(--page-w) / 0.62);
 }
 
 .green-circle-button {
@@ -832,7 +816,6 @@ li {
 {
     position: relative;
     width: calc(var(--page-w) * 0.99);
-    min-height: calc(var(--page-w) / 2.5);
 }
 
 .green-circle-button::after {
