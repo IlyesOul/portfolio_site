@@ -1,3 +1,10 @@
+:root {
+    --design-w: 2560;
+    --design-h: 1440;
+    --page-scale: min(calc(100vw / var(--design-w)), calc(100vh / var(--design-h)));
+    --page-w: calc(var(--design-w) * var(--page-scale));
+}
+
 @font-face {
     font-family: "StarWars";
     src: url('SFDistantGalaxy.woff');
@@ -6,12 +13,12 @@
 .star-wars-text {
     position:absolute;
     font-family:'StarWars';
-    font-size: calc(100vw/15); /* Adjust as needed */
+    font-size: calc(var(--page-w) /15); /* Adjust as needed */
     text-transform: uppercase;
     letter-spacing: 2px;
     color: gold;
-    left:calc(100vw/5.4);
-    top:calc(100vw/6.9)
+    left:calc(var(--page-w) /5.4);
+    top:calc(var(--page-w) /6.9)
 }
 
 button
@@ -23,8 +30,8 @@ button
     text-align: center;
     font-size:x-large;
     font-family: 'Changa', sans-serif;
-    left: calc(100vw/2.35);
-    top:calc(100vw/2.75);
+    left: calc(var(--page-w) /2.35);
+    top:calc(var(--page-w) /2.75);
     border-radius:5%;
 }
 
@@ -39,12 +46,25 @@ h2 {
     margin-left:30px;
 }
 
+html {
+    display: flex;
+    justify-content: center;
+}
+
 html, body {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    position: relative;
+    width: var(--page-w);
+    max-width: 100vw;
+    min-height: 100vh;
 }
 
 p{
@@ -200,15 +220,15 @@ a:visited{
     border-radius: 5%;
     border:solid; 
     border-color: rgb(52, 52, 255);
-    height:calc(100vw/35);
-    width:calc(100vw/9);
+    height:calc(var(--page-w) /35);
+    width:calc(var(--page-w) /9);
     font-family:'Changa';
     color:rgb(65, 65, 252);
     position:absolute;
-    left:calc(100vw/5.25);
-    top:calc(100vw/2.85);
+    left:calc(var(--page-w) /5.25);
+    top:calc(var(--page-w) /2.85);
     text-align: center;
-    font-size: calc(100vw/90); 
+    font-size: calc(var(--page-w) /90); 
     background-color: transparent;
     animation: .1s ease-out 0s 1 openUp;
 }
@@ -256,11 +276,11 @@ a:visited{
 .white_circle
 {
     border-radius: 50%;
-    margin-left:calc(100vw/4.5);
-    width: calc(100vw/28.444);
-    height: calc(100vw/28.444);
+    margin-left:calc(var(--page-w) /4.5);
+    width: calc(var(--page-w) /28.444);
+    height: calc(var(--page-w) /28.444);
     background-color: whitesmoke; 
-    margin-top:calc(100vw/17.067);
+    margin-top:calc(var(--page-w) /17.067);
 }
 
 .white_circle :hover .white_text
@@ -276,9 +296,9 @@ a:visited{
 .transculent_circle {
     position: absolute;
     border-radius: 50%;
-    left: calc(100vw / 35);
-    width: calc(100vw / 40);
-    height: calc(100vw / 40);
+    left: calc(var(--page-w) / 35);
+    width: calc(var(--page-w) / 40);
+    height: calc(var(--page-w) / 40);
     background-color: #18181C;
     border-color: aliceblue;
     border-style: solid;
@@ -306,9 +326,9 @@ a:visited{
     font-family: 'Changa', sans-serif;
     display: none;
     position: absolute;
-    top: calc(100vw/20);
-    width:calc(100vw/5);
-    left: calc(-100vw/10);
+    top: calc(var(--page-w) /20);
+    width:calc(var(--page-w) /5);
+    left: calc(-1 * var(--page-w) /10);
     background-color: rgba(68, 66, 66, 0.7);
     color: white;
     padding: 10px;
@@ -344,27 +364,27 @@ a:visited{
     padding: 5px 10px;
     border-radius: 5px;
     white-space: nowrap;
-    left:calc(100vw/10);
+    left:calc(var(--page-w) /10);
 }
 
 .red_circle
 {
     border-radius: 50%;
-    margin-left:calc(100vw/4.5);
-    width: calc(100vw/28.444);
-    height: calc(100vw/28.444);
+    margin-left:calc(var(--page-w) /4.5);
+    width: calc(var(--page-w) /28.444);
+    height: calc(var(--page-w) /28.444);
     background-color: red; 
-    margin-top:calc(100vw/17.067);
+    margin-top:calc(var(--page-w) /17.067);
 }
 
 .green_circle
 {
     border-radius: 50%;
-    margin-left:calc(100vw/4.5);
-    width: calc(100vw/28.444);
-    height: calc(100vw/28.444);
+    margin-left:calc(var(--page-w) /4.5);
+    width: calc(var(--page-w) /28.444);
+    height: calc(var(--page-w) /28.444);
     background-color: darkgreen; 
-    margin-top:calc(100vw/7.31428);
+    margin-top:calc(var(--page-w) /7.31428);
 }
 
 @keyframes openUp {
@@ -379,15 +399,15 @@ a:visited{
 .title
 {
     font-family: 'Martian Mono';
-    margin-top:calc(-100vw/6.7638);
+    margin-top:calc(-1 * var(--page-w) /6.7638);
     color:white;
-    font-size: calc(100vw/25.6);
+    font-size: calc(var(--page-w) /25.6);
     animation: .1s ease-out 0s 1 openUp;
 }
 
 /* Basic styling for the image */
 .image-link img {
-    width: 300px; /* Adjust as needed */
+    width: calc(var(--page-w) / 8.53);
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -417,7 +437,7 @@ a:visited{
 
 /* Basic styling for the image */
 .hover-effect {
-    width: 300px; /* Adjust as needed */
+    width: calc(var(--page-w) / 8.53);
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -426,9 +446,9 @@ a:visited{
     font-family: 'Changa', sans-serif;
     display: none;
     position: absolute;
-    top: calc(100vw/20);
-    width:calc(100vw/5);
-    left: calc(-100vw/10);
+    top: calc(var(--page-w) /20);
+    width:calc(var(--page-w) /5);
+    left: calc(-1 * var(--page-w) /10);
     background-color: rgba(68, 66, 66, 0.7);
     color: white;
     padding: 10px;
@@ -455,59 +475,54 @@ a:visited{
     border-radius: 5%;
     border:solid;
     border-color: blue;
-    height:calc(100vw/50);
-    width:calc(100vw/12);
+    height:calc(var(--page-w) /50);
+    width:calc(var(--page-w) /12);
     font-family:'Changa';
     color:blue;
     position:absolute;
-    left:calc(100vw/4.25);
-    top:calc(100vw/2.75);
+    left:calc(var(--page-w) /4.25);
+    top:calc(var(--page-w) /2.75);
     text-align: center;
-    font-size: calc(100vw/90);
+    font-size: calc(var(--page-w) /90);
 }
 
 
 .blue_bar
 {
     position:absolute;
-    height:calc(100vw/300);
-    width: calc(100vw/4);
+    height:calc(var(--page-w) /300);
+    width: calc(var(--page-w) /4);
     background-color:blue;
-    left:calc(100vw/5.5);
-    top:calc(100vw/3.5);
+    left:calc(var(--page-w) /5.5);
+    top:calc(var(--page-w) /3.5);
     animation: .1s ease-out 0s 1 openUp;
 }
 
 .green_bar
 {
-    height:calc(100vw/426.667);
-    width: calc(100vw/4);
+    height:calc(var(--page-w) /426.667);
+    width: calc(var(--page-w) /4);
     background-color:blue;
-    margin-left:calc(100vw/12.8);
-    margin-top:calc(-100vw/21.3333);
+    margin-left:calc(var(--page-w) /12.8);
+    margin-top:calc(-1 * var(--page-w) /21.3333);
 }
 
 .red_bar
 {
-    height:calc(100vw/426.67);
-    width: calc(100vw/4.74);
+    height:calc(var(--page-w) /426.67);
+    width: calc(var(--page-w) /4.74);
     background-color:red;
-    margin-left:calc(100vw/11.636);
-    margin-top:calc(-100vw/25.6);
+    margin-left:calc(var(--page-w) /11.636);
+    margin-top:calc(-1 * var(--page-w) /25.6);
 }
 
 .white_bar
 {
-    height:calc(100vw/426.7);
-    width: calc(100vw/4.74);
+    height:calc(var(--page-w) /426.7);
+    width: calc(var(--page-w) /4.74);
     background-color:whitesmoke;
-    margin-left:calc(100vw/11.64);
-    margin-top:calc(-100vw/25.6);
-}
-
-html, body {
-    height: 100%;
-    overflow: auto;
+    margin-left:calc(var(--page-w) /11.64);
+    margin-top:calc(-1 * var(--page-w) /25.6);
 }
 
 
@@ -517,7 +532,7 @@ html, body {
     font-family: 'Changa', sans-serif;
     font-size:large;
     color:rgb(183, 181, 181);
-    left:calc(100vw/5.5);
+    left:calc(var(--page-w) /5.5);
     animation: .1s ease-out 0s 1 openUp;
 }
 
@@ -527,15 +542,15 @@ html, body {
     font-family: 'Changa', sans-serif;
     font-size:x-large;
     color:rgb(164, 125, 25);
-    left:calc(100vw/2.5);
+    left:calc(var(--page-w) /2.5);
     animation: .1s ease-out 0s 1 openUp;
 }
 
 .blink
 {
     position:absolute;
-    width:calc(100vw/200);
-    height:calc(100vw/200);
+    width:calc(var(--page-w) /200);
+    height:calc(var(--page-w) /200);
     animation: blinker 1.5s linear infinite;
     background-color: #E6E9EA;
     border-radius: 50%;
@@ -553,18 +568,18 @@ html, body {
     border-color:rgb(157, 3, 3);
     border-style: solid;
     border-radius: 5%;
-    font-size:17px;
+    font-size: calc(var(--page-w) / 150);
     color:rgb(157, 3, 3);
-    margin-top:55px;
-    margin-left:275px;
+    margin-top: calc(var(--page-w) / 46.5);
+    margin-left: calc(var(--page-w) / 9.3);
     font-family: '"'Martian Mono';';
-    width:150px;
+    width: calc(var(--page-w) / 17.07);
     text-align:center;
-    height:35px;
+    height: calc(var(--page-w) / 73.14);
     border-width:thin;
     font-weight:550;
     vertical-align: middle;
-    line-height: 35px;
+    line-height: calc(var(--page-w) / 73.14);
 }
 
 .learn_more_box :hover {background-color: rgb(177, 81, 81); opacity: 25%;}
@@ -572,53 +587,53 @@ html, body {
 .triangle-down {
 	width: 0;
 	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 25px solid #ffffff;
-    margin-left:65px;
+	border-left: calc(var(--page-w) / 512) solid transparent;
+	border-right: calc(var(--page-w) / 512) solid transparent;
+	border-top: calc(var(--page-w) / 102.4) solid #ffffff;
+    margin-left: calc(var(--page-w) / 39.38);
 }
 
 .scroll_bar
 {
-    width: 5px;
-    height:50px;
+    width: calc(var(--page-w) / 512);
+    height: calc(var(--page-w) / 51.2);
     background-color: #ffffff;
-    margin-left:68px;
-    margin-top:-75px;
+    margin-left: calc(var(--page-w) / 37.65);
+    margin-top: calc(var(--page-w) / -34.13);
 }
 
 li {
     list-style:square;
-    margin-left:calc(100vw/42.7); 
-    margin-top:calc(100vw/28.4); 
+    margin-left:calc(var(--page-w) /42.7); 
+    margin-top:calc(var(--page-w) /28.4); 
     font-family: '"'Martian Mono';'; 
-    font-size:calc(100vw/64); 
+    font-size:calc(var(--page-w) /64); 
     color:rgb(183, 181, 181); 
-    margin-right:calc(100vw/1.41)
+    margin-right:calc(var(--page-w) /1.41)
  }
 
  .battery {
-    border: calc(100vw/426.7) solid #333;
-    width: calc(100vw/32);
-    height: calc(100vw/5.12);
-    padding: calc(100vw/640);
-    border-radius: calc(100vw/320);
+    border: calc(var(--page-w) /426.7) solid #333;
+    width: calc(var(--page-w) /32);
+    height: calc(var(--page-w) /5.12);
+    padding: calc(var(--page-w) /640);
+    border-radius: calc(var(--page-w) /320);
     position: relative;
-    margin: calc(100vw/85.33);
+    margin: calc(var(--page-w) /85.33);
     border-color:aliceblue;
     transform:rotate(90deg);
  }
 
  .batteryLevel {
-    border-radius: calc(100vw/640);
+    border-radius: calc(var(--page-w) /640);
     background-color: #73AD21;
   } 
   
   
   .ML_IMG {
-    padding: calc(100vw / 42.667);
-    margin: calc(100vw / 51.2);
-    width: calc(100vw / 5.12);
+    padding: calc(var(--page-w) / 42.667);
+    margin: calc(var(--page-w) / 51.2);
+    width: calc(var(--page-w) / 5.12);
     font-family: 'Spectral';
     justify-content: center;
     align-items: center;
@@ -639,27 +654,18 @@ li {
 
 
   .JAVA_IMG{
-    padding:1%;
-    /*background-color: rgb(133, 128, 36);*/
     border-color: antiquewhite;
     border-style: solid;
-    /* modify margin and padding here*/
-    padding: 30px;
-    margin: 25px;
-    width:500px;
-    margin-left: 50px;
-    margin-top: 205px;
+    padding: calc(var(--page-w) / 85.33);
+    margin: calc(var(--page-w) / 128);
+    width: calc(var(--page-w) / 10.24);
     font-family:'Spectral';
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size:50%;
     border-color:aliceblue;
-    margin-top: 500px;
-    width: 250px;
-    margin: 20px;
-    padding: 50px;
-    border: 2px solid aliceblue;
+    border: calc(var(--page-w) / 512) solid aliceblue;
   }
 
 
@@ -670,9 +676,9 @@ li {
   }
 
   .item {
-    padding: calc(100vw/64); /* Padding around grid items */
-    border: calc(100vw/2560) solid aliceblue; /* Border around grid items */
-    width:calc(100vw/2.844);
+    padding: calc(var(--page-w) /64); /* Padding around grid items */
+    border: calc(var(--page-w) /2560) solid aliceblue; /* Border around grid items */
+    width:calc(var(--page-w) /2.844);
     border-radius:5%;
   }
 
@@ -711,61 +717,65 @@ li {
     position:absolute;
     font-family: Lucida Console, Courier New, monospace;
     color:whitesmoke;
-    top:calc(100vw/7.25);
-    font-size: calc(100vw/91.429);
-    left:calc(100vw/24);
+    top:calc(var(--page-w) /7.25);
+    font-size: calc(var(--page-w) /91.429);
+    left:calc(var(--page-w) /24);
 }
 
 .instruction_bar
 {
     position:absolute;
-    height:calc(100vw/426.667);
-    width: calc(100vw/4.741);
+    height:calc(var(--page-w) /426.667);
+    width: calc(var(--page-w) /4.741);
     background-color:darkgreen;
-    left:calc(100vw/128);
-    top:calc(100vw/21.333);
+    left:calc(var(--page-w) /128);
+    top:calc(var(--page-w) /21.333);
 }
 
 .description_img {
-    width: calc(100vw/2.1333);
-    height: calc(100vw/3.2);
+    width: calc(var(--page-w) /2.1333);
+    height: calc(var(--page-w) /3.2);
     animation: .1s ease-out 0s 1 openUp;
   }
 
 .selfie_img {
-    width: calc(100vw/5.4);
-    height: calc(100vw/3.3);
+    width: calc(var(--page-w) /5.4);
+    height: calc(var(--page-w) /3.3);
 }
 
 .list_grid
 {
     position: relative;
-    width:100vw;
+    width: var(--page-w);
+    min-height: calc(var(--page-w) / 0.62);
 }
 
 .list_grid_aboutme
 {
     position: relative;
+    width: var(--page-w);
+    min-height: calc(var(--page-w) / 0.62);
 }
 
 .proficiency_grid
 {
     position: relative;
-    width:100vw;
-    margin-top:calc(100vw/8.5333);
+    width:var(--page-w);
+    margin-top:calc(var(--page-w) /8.5333);
 }
 
 .ml_projects_grid
 {
     position: relative;
-    width:100vw;
-    margin-top:calc(-100vw/75);
+    width:var(--page-w);
+    margin-top:calc(-1 * var(--page-w) /75);
 }
 
 .independent_grid
 {
     position: relative;
-    width:99vw;
+    width: calc(var(--page-w) * 0.99);
+    min-height: calc(var(--page-w) / 0.62);
 }
 
 .green-circle-button {
@@ -773,12 +783,12 @@ li {
     position:absolute;
     text-decoration: none; /* Remove default underline */
     background-color:darkgreen;
-    left:calc(100vw/7.5); 
+    left:calc(var(--page-w) /7.5); 
     border-radius: 50%;
-    width: calc(100vw/28.444);
-    height: calc(100vw/28.444);
+    width: calc(var(--page-w) /28.444);
+    height: calc(var(--page-w) /28.444);
     background-color: darkgreen; 
-    top:calc(100vw/8);
+    top:calc(var(--page-w) /8);
 }
 
 /* Hover effect for the button */
@@ -789,12 +799,12 @@ li {
 .red-circle-button {
     position:absolute;
     text-decoration: none; /* Remove default underline */
-    left:calc(100vw/7.5); 
+    left:calc(var(--page-w) /7.5); 
     border-radius: 50%;
-    width: calc(100vw/28.444);
-    height: calc(100vw/28.444);
+    width: calc(var(--page-w) /28.444);
+    height: calc(var(--page-w) /28.444);
     background-color: red; 
-    top:calc(100vw/4.25);
+    top:calc(var(--page-w) /4.25);
 }
 
 /* Hover effect for the button */
@@ -805,12 +815,12 @@ li {
 .white-circle-button {
     position:absolute;
     text-decoration: none; /* Remove default underline */
-    left:calc(100vw/7.5); 
+    left:calc(var(--page-w) /7.5); 
     border-radius: 50%;
-    width: calc(100vw/28.444);
-    height: calc(100vw/28.444);
+    width: calc(var(--page-w) /28.444);
+    height: calc(var(--page-w) /28.444);
     background-color: white; 
-    top:calc(100vw/2.85);
+    top:calc(var(--page-w) /2.85);
 }
 
 /* Hover effect for the button */
@@ -821,7 +831,8 @@ li {
 .intro_grid
 {
     position: relative;
-    width:99vw;
+    width: calc(var(--page-w) * 0.99);
+    min-height: calc(var(--page-w) / 2.5);
 }
 
 .green-circle-button::after {
@@ -838,7 +849,7 @@ li {
     z-index: 1; /* Ensure tooltip appears above the button */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
-    left:calc(100vw/12)
+    left:calc(var(--page-w) /12)
 }
 
 /* Show tooltip on hover */
@@ -859,7 +870,7 @@ li {
     z-index: 1; /* Ensure tooltip appears above the button */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
-    left:calc(100vw/12)
+    left:calc(var(--page-w) /12)
 }
 
 /* Show tooltip on hover */
@@ -881,7 +892,7 @@ li {
     z-index: 1; /* Ensure tooltip appears above the button */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
-    left:calc(100vw/12)
+    left:calc(var(--page-w) /12)
 }
 
 /* Show tooltip on hover */

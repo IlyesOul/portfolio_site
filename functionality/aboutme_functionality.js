@@ -4,19 +4,19 @@ window.onload = function generateStars() {
 
   for(i =0; i<300; i++)
   {
-    let x = Math.random() * window.innerWidth, y=Math.random()*1.15 * window.innerHeight*3.25;
+    let x = Math.random() * getPageWidth(), y=Math.random()*1.15 * getPageHeight()*3.25;
    
 
-    while(window.innerWidth/20 < x && x <  window.innerWidth/1.07)
+    while(getPageWidth()/20 < x && x <  getPageWidth()/1.07)
     {
-      x = Math.random() * window.innerWidth
-      y = Math.random() * window.innerHeight*2
+      x = Math.random() * getPageWidth()
+      y = Math.random() * getPageHeight()*2
       
     }
 
-    while((window.innerHeight/5 >y))
+    while((getPageHeight()/5 >y))
     {
-      y = Math.random() * window.innerHeight*2
+      y = Math.random() * getPageHeight()*2
     }
 
     let coordinate_pair = [x,y]
@@ -29,8 +29,8 @@ for (i = 0; i < coordinates.length; i++){
         star.setAttribute('class', 'blink');
 
         let gen_number = Math.floor(Math.random() * (300 - 100 + 1))+200;
-        star.style.width = (window.innerWidth / gen_number) + "px";
-        star.style.height = (window.innerWidth / gen_number) + "px";
+        star.style.width = (getPageWidth() / gen_number) + "px";
+        star.style.height = (getPageWidth() / gen_number) + "px";
 
         // Generate blink time
         let blink_time = Math.random() * 5 +2;
@@ -45,7 +45,8 @@ for (i = 0; i < coordinates.length; i++){
         star.style.left = coordinates[i][0] + "px";
         star.style.top = coordinates[i][1] + "px";
       
-        document.body.appendChild(star);
+        var canvas = getPageCanvas();
+        (canvas || document.body).appendChild(star);
 
 }
 
