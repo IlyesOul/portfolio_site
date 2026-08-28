@@ -3,22 +3,39 @@ window.onload = function generateStars() {
   console.log(window.location)
 
     var coordinates=[]
+    var pageWidth = getPageWidth();
+
+    var containers = document.querySelectorAll('.ml_projects_grid .container');
+    var contentHeight = window.innerHeight;
+    for (var j = 0; j < containers.length; j++) {
+      var bottom = containers[j].getBoundingClientRect().bottom + window.scrollY;
+      if (bottom > contentHeight) {
+        contentHeight = bottom;
+      }
+    }
+    contentHeight += pageWidth / 20;
+
+    var grid = document.querySelector('.ml_projects_grid');
+    if (grid) {
+      var gridTop = grid.getBoundingClientRect().top + window.scrollY;
+      grid.style.minHeight = (contentHeight - gridTop) + 'px';
+    }
 
   for(i =0; i<300; i++)
   {
-    let x = Math.random() * getPageWidth(), y=Math.random() * getPageHeight();
+    let x = Math.random() * pageWidth, y=Math.random() * contentHeight;
    
 
-    while(getPageWidth()/20 < x && x <  getPageWidth()/1.07)
+    while(pageWidth/20 < x && x <  pageWidth/1.07)
     {
-      x = Math.random() * getPageWidth()
-      y = Math.random() * getPageHeight()*1.5
+      x = Math.random() * pageWidth
+      y = Math.random() * contentHeight
       
     }
 
-    while((getPageHeight()/5 >y))
+    while((contentHeight/5 >y))
     {
-      y = Math.random() * getPageHeight()*1.5
+      y = Math.random() * contentHeight
     }
 
     let coordinate_pair = [x,y]
@@ -31,8 +48,8 @@ for (i = 0; i < coordinates.length; i++){
         star.setAttribute('class', 'blink');
 
         let gen_number = Math.floor(Math.random() * (300 - 100 + 1))+200;
-        star.style.width = (getPageWidth() / gen_number) + "px";
-        star.style.height = (getPageWidth() / gen_number) + "px";
+        star.style.width = (pageWidth / gen_number) + "px";
+        star.style.height = (pageWidth / gen_number) + "px";
 
         // Generate blink time
         let blink_time = Math.random() * 5 +2;
