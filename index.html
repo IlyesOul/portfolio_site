@@ -1,155 +1,265 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <link rel="icon" type="image/x-icon" href="Images/favicon.png">
-        <title>Ilyes's Portfolio</title>
-        <link rel = "stylesheet" type = "text/css"href = "pages_design/design/style.css" />
-        <script src="functionality/layout-utils.js"></script>
-        <script src="functionality/main_page_animations.js"></script>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Martian Mono' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
-    </head> 
- 
-     <body style="background-color: #18181C;">
-
-    <div class = "intro_grid">
-        <!--Side Cirlces-->
-        <a href = "index.html" title = "Home Page" class = "transculent_circle" style = " top: calc(var(--page-w) /4.75); background-color: aliceblue; "> 
-            <div class="info" style = "left:calc(var(--page-w) /25); top:calc(-1 * var(--page-w) /1000); width:calc(var(--page-w) /15)">
-                Home Page
-            </div>
-        </a>
-
-        <a href = "pages_design/aboutme.html" class = "transculent_circle" style = "top: calc(var(--page-w) /4.05);">
-            <div class="info" style = "left:calc(var(--page-w) /25); top:calc(-1 * var(--page-w) /1000); width:calc(var(--page-w) /15)">
-                About Ilyes
-            </div>
-        </a>
-         
-        <a href = "pages_design/projects.html" class = "transculent_circle" style = "top:calc(var(--page-w) /3.5);"> 
-            <div class="info" style = "left:calc(var(--page-w) /25); top:calc(-1 * var(--page-w) /1000); width:calc(var(--page-w) /15)">
-                My Projects
-            </div>
-        </a>
-
-        <a href = "pages_design/impact.html" class = "transculent_circle" style = "top:calc(var(--page-w) /2.545);"> 
-            <div class="info" style = "left:calc(var(--page-w) /25); top:calc(-1 * var(--page-w) /1000); width:calc(var(--page-w) /15)">
-                Impact
-            </div>
-        </a>
-         
-        <a href = "pages_design/independent.html" class = "transculent_circle" style = "top:calc(var(--page-w) /2.8);"> 
-            <div class="info" style = "left:calc(var(--page-w) /25); top:calc(-1 * var(--page-w) /1000); width:calc(var(--page-w) /10)">
-                ML Independent Study
-            </div>
-        </a>
-
-        <a href = "pages_design/urop.html" class = "transculent_circle" style = "top:calc(var(--page-w) /3.1);"> 
-            <div class="info" style = "left:calc(var(--page-w) /25); top:calc(-1 * var(--page-w) /1000); width:calc(var(--page-w) /10)">
-                MIT-Harvard UROP
-            </div>
-        </a>
-        
-        <a href = "pages_design/contact.html" class = "transculent_circle" style = "top:calc(var(--page-w) /2.33);"> 
-            <div class="info" style = "left:calc(var(--page-w) /25); top:calc(-1 * var(--page-w) /1000); width:calc(var(--page-w) /15)">
-                Contact Me
-            </div>
-        </a>
-        
-        <!--<div class = "title" style = "position:absolute; left:calc(var(--page-w) /5.4); top:calc(var(--page-w) /2.65); width:calc(var(--page-w) /250)">
-            Ilyes Ouldsaada 
-        </div>-->
-
-        <p class="star-wars-text">Ilyes Ouldsaada</p>
-        
-        <audio id="audio" src="star_wars_song.mp3" preload="auto"></audio>
-        
-        <a href="https://github.com/IlyesOul" target = "_blank" class="image-link">
-            <img src="Images/github.png" alt="My GitHub" style="position:absolute;width:calc(var(--page-w) /10); left:calc(var(--page-w) /1.1); top:calc(-1 * var(--page-w) /50)">
-        </a>
-
-        <div class="hover-container" style = "position:absolute; left:calc(var(--page-w) /1.14); top:calc(var(--page-w) /100)">
-            <div class="info">
-                This website was built from scratch using HTML, CSS, and JS; it is hosted by a Github repository!
-            </div>
-            <img src="Images/information.png" style = "width:calc(var(--page-w) /23); height: calc(var(--page-w) /23);" alt="About this website" class="hover-effect">
-        </div>
-
-        <div class = "blue_bar" style = "top:calc(var(--page-w) /3.75); width:calc(var(--page-w) /1.55); left:calc(var(--page-w) /5); background-color: gold;"></div>
-
-
-        <a href="https://github.com/IlyesOul" target = "_blank" class="image-link">
-            <img src="Images/github.png" alt="My GitHub" style="border-color: rgb(164, 125, 25);position:absolute;width:calc(var(--page-w) /10); left:calc(var(--page-w) /1.1); top:calc(-1 * var(--page-w) /50)">
-        </a>
-
-        <div class="hover-container" style = "position:absolute; left:calc(var(--page-w) /1.14); top:calc(var(--page-w) /100)">
-            <div class="info">
-                This website was built from scratch using HTML, CSS, and JS; it is hosted by a Github repository!
-            </div>
-            <img src="Images/information.png" style = "width:calc(var(--page-w) /23); height: calc(var(--page-w) /23);" alt="About this website" class="hover-effect">
-        </div>
-
-        <div class = "blue_bar" style = "top:calc(var(--page-w) /3.75); width:calc(var(--page-w) /1.55); left:calc(var(--page-w) /5); background-color: gold;"></div>
-
-        
-        <div class = "main_page_text" style = "top:calc(var(--page-w) /3.6); font-weight: 100; left:calc(var(--page-w) /4.5)">
-            software development
-        </div>
-        <div class = "main_page_text" style = "top:calc(var(--page-w) /3.6); left:calc(var(--page-w) /2.2)">
-            machine learning
-        </div>
-       <div class = "main_page_text" style = "top:calc(var(--page-w) /3.6); left:calc(var(--page-w) /1.5)">
-            game development
-        </div> 
-
-        <button id="playBtn">unleash the experience</button>
-        <audio id="myAudio" source src="sounds/star_wars_clone_wars.mp3" type="audio/mp3">
-        </audio>
-        
-        <script>
-            window.addEventListener('load', function () {
-                const audio = document.getElementById('myAudio');
-                const playButton = document.getElementById('playBtn');
-
-                playButton.addEventListener('click', () => {
-                audio.play().catch(error => {
-                 console.log("Error playing audio:", error);
-            });
-
-        // Function to fade out the audio
-        function fadeOut() {
-            const fadeOutDuration = 5;  // Fade out duration in seconds
-            const fadeInterval = 50;    // Interval time in milliseconds
-            let currentVolume = audio.volume;  // Start with current volume
-            const fadeStep = currentVolume / (fadeOutDuration * 1000 / fadeInterval);  // Volume decrement per interval
-
-            // Set an interval to gradually decrease the volume
-            const fadeIntervalID = setInterval(function () {
-                if (currentVolume > 0) {
-                    currentVolume -= fadeStep;  // Reduce volume
-                    audio.volume = currentVolume;  // Set new volume
-                } else {
-                    clearInterval(fadeIntervalID);  // Clear interval once volume reaches 0
-                    audio.pause();  // Pause the audio
-                    audio.currentTime = 0;  // Reset audio to the beginning
-                }
-            }, fadeInterval);
-        }
-
-        // Stop the sound after 5 seconds and start fading out
-        setTimeout(function () {
-            fadeOut();  // Start fading out after 5 seconds
-        }, 5000);
-    });
-});
-
-
-        </script>
-
-
-    
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Portfolio | Ilyes Ouldsaada
+  </title>
+  <meta content="Ilyes Ouldsaada — MIT computer science student working on machine learning, computer vision, robotics, and healthcare applications." name="description"/>
+  <link href="Images/favicon.png" rel="icon"/>
+  <link href="pages_design/design/style.css" rel="stylesheet"/>
+  <link href="pages_design/design/portfolio.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&amp;family=Changa:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <script defer="" src="functionality/layout-utils.js">
+  </script>
+  <script defer="" src="functionality/main_page_animations.js">
+  </script>
+ </head>
+ <body class="portfolio-page">
+  <a class="skip-link" href="#main-content">
+   skip to content
+  </a>
+  <nav aria-label="Pages" class="page-nav">
+   <p class="nav-caption">
+    pages
+   </p>
+   <ul>
+    <li>
+     <a aria-current="page" href="index.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       home page
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="pages_design/aboutme.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       about Ilyes
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="pages_design/projects.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       my projects
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="pages_design/nepf.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       Fall 2026 UROP
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="pages_design/urop.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       biomedical UROP
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="pages_design/fidelity.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       Fidelity internship
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="pages_design/independent.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       ML independent study
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="pages_design/impact.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       impact
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="pages_design/contact.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       contact me
+      </span>
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <details class="mobile-nav">
+   <summary>
+    pages
+    <span aria-hidden="true">
+     ＋
+    </span>
+   </summary>
+   <nav aria-label="Mobile pages">
+    <ul>
+     <li>
+      <a aria-current="page" href="index.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        home page
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="pages_design/aboutme.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        about Ilyes
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="pages_design/projects.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        my projects
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="pages_design/nepf.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        Fall 2026 UROP
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="pages_design/urop.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        biomedical UROP
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="pages_design/fidelity.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        Fidelity internship
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="pages_design/independent.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        ML independent study
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="pages_design/impact.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        impact
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="pages_design/contact.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        contact me
+       </span>
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </details>
+  <header class="site-tools">
+   <details class="site-info">
+    <summary aria-label="About this website">
+     <img alt="" src="Images/information.png"/>
+    </summary>
+    <p>
+     built from scratch with HTML, CSS &amp; JavaScript. a little space for my work and curiosities.
+    </p>
+   </details>
+   <a href="https://github.com/IlyesOul" rel="noopener noreferrer" target="_blank">
+    <img alt="My GitHub" src="Images/github.png"/>
+   </a>
+  </header>
+  <main id="main-content">
+   <section class="home-hero">
+    <p class="eyebrow">
+     MIT · computer science &amp; computer engineering · 2029
+    </p>
+    <h1 class="galaxy-title">
+     Ilyes Ouldsaada
+    </h1>
+    <div class="home-rule">
+    </div>
+    <div class="home-interests">
+     <span>
+      machine learning
+     </span>
+     <span>
+      robotics &amp; perception
+     </span>
+     <span>
+      healthcare applications
+     </span>
+    </div>
+    <p class="home-note">
+     building learning systems for the world beyond the dataset.
+    </p>
+    <div class="home-actions">
+     <a class="action" href="pages_design/nepf.html">
+      CURRENT RESEARCH
+      <span aria-hidden="true">
+       ↗
+      </span>
+     </a>
+     <button aria-pressed="false" class="audio-button" id="playBtn" type="button">
+      unleash the experience
+     </button>
+    </div>
+    <audio id="myAudio" preload="none" src="sounds/star_wars_clone_wars.mp3">
+    </audio>
+    <p class="audio-status" id="audio-status" role="status">
+    </p>
+   </section>
+  </main>
+  <footer class="site-footer">
+   Ilyes Ouldsaada
+   <span>
+    MIT · class of 2029
+   </span>
+  </footer>
+ </body>
 </html>
- 
