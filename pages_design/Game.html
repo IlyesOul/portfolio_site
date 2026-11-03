@@ -1,47 +1,309 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <link rel="icon" type="image/x-icon" href="../Images/favicon.png">
-        <title>Ilyes's Portfolio | Game Development</title>
-        <link rel = "stylesheet" type = "text/css"href = "design/style.css" />
-        <meta name="viewport" content="width=device-width">
-        <script src="../functionality/layout-utils.js"></script>
-        <script src = "../functionality/ML_functionality.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Martian Mono' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
-
-        <style>
-            img {
-                max-width: 100%;
-            }
-            </style>
-    </head>
-
-    <body style = "background-color:rgb(26, 25, 25); position:relative">
-
-        <a href="https://ilyesoul.github.io/portfolio_site/index.html" class="image-link">
-            <img src="../Images/favicon.png" alt="Return Home" style="border-color: rgb(164, 125, 25);position:absolute;width:calc(var(--page-w) /10); right:calc(var(--page-w) /1.11); top:calc(-1 * var(--page-w) /200); border-radius: 15%;  transform: scale(0.75);">
-        </a>
-
-        <!--Space Race-->
-        <div class = "container" style = "position:absolute; left:calc(var(--page-w) /15); top:calc(var(--page-w) /12.8);">
-            <div class = "item" style = "font-family: Martian Mono; color: whitesmoke; font-size:calc(var(--page-w) /75);font-weight:bolder; text-align: center;">The Space Race</div>
-            <div class = "item"><a href = "jet.html" target="_blank"><img src = "../Images/Jet_Output.png" style = "width:calc(var(--page-w) /2.8444); height:calc(var(--page-w) /5.69)"></a></div>
-            <div class = "item" style = "font-family: Martian Mono; font-size:calc(var(--page-w) /100);text-align: center; color:yellow; text-align: center;">a fast-paced multiplayer game where two players race through an asteroid-filled space, dodging obstacles to reach the finish line in a race against time  </div>
-        </div>
-
-        <!--Sling and Stack 'em-->
-        <div class = "container" style = "position:absolute; left:calc(var(--page-w) /1.875); top:calc(var(--page-w) /12.8);">
-            <div class = "item" style = "font-family: Martian Mono; color: whitesmoke;font-size:calc(var(--page-w) /75);font-weight:bolder; text-align: center;" >Sling and Stack 'em</div>
-            <div class = "item"><a href = "sling.html" target="_blank"><img src = "../Images/Output_Sling.png" style = "width:calc(var(--page-w) /2.8444); height:calc(var(--page-w) /5.69)"></a></div>
-            <div class = "item" style = "font-family: Martian Mono; font-size:calc(var(--page-w) /100);text-align: center; color:yellow; text-align: center;">based on Angry Birds, this game requires the user to optimize their efforts between offense and defense in a battle against a computer-bot!</div>
-        </div>
-
-        <!--Argon Escape-->
-        <div class = "container" style = "position:absolute; left:calc(var(--page-w) /3.2); top:calc(var(--page-w) /1.896);">
-            <div class = "item" style = "font-family: Martian Mono; color: whitesmoke;font-size:calc(var(--page-w) /75);font-weight:bolder; text-align: center;" >Argon Escape</div>
-            <div class = "item"><a href = "argon.html" target="_blank"><img src = "../Images/Unity_IMG.jpg" style = "width:calc(var(--page-w) /2.8444); height:calc(var(--page-w) /5.69)"></a></div>
-            <div class = "item" style = "font-family: Martian Mono; font-size:calc(var(--page-w) /100);text-align: center; color:yellow; text-align: center;">this Unity/C# game takes the user through an array of diverse enviroments where they must comamander a rocket through various obstacles that progressively become more difficult!</div>
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   game development | Ilyes Ouldsaada
+  </title>
+  <meta content="Ilyes Ouldsaada, MIT computer science student working on machine learning, computer vision, robotics, and healthcare applications." name="description"/>
+  <link href="../Images/favicon.png" rel="icon"/>
+  <link href="design/style.css" rel="stylesheet"/>
+  <link href="design/portfolio.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&amp;family=Changa:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <script defer="" src="../functionality/layout-utils.js">
+  </script>
+  <script defer="" src="../functionality/ML_functionality.js">
+  </script>
+ </head>
+ <body class="portfolio-page">
+  <a class="skip-link" href="#main-content">
+   skip to content
+  </a>
+  <nav aria-label="Pages" class="page-nav">
+   <p class="nav-caption">
+    pages
+   </p>
+   <ul>
+    <li>
+     <a href="../index.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       home page
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="aboutme.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       about Ilyes
+      </span>
+     </a>
+    </li>
+    <li>
+     <a aria-current="page" href="projects.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       my projects
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="nepf.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       Fall 2026 UROP
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="urop.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       biomedical UROP
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="fidelity.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       Fidelity internship
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="independent.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       ML independent study
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="impact.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       impact
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="contact.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       contact me
+      </span>
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <details class="mobile-nav">
+   <summary>
+    pages
+    <span aria-hidden="true">
+     ＋
+    </span>
+   </summary>
+   <nav aria-label="Mobile pages">
+    <ul>
+     <li>
+      <a href="../index.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        home page
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="aboutme.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        about Ilyes
+       </span>
+      </a>
+     </li>
+     <li>
+      <a aria-current="page" href="projects.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        my projects
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="nepf.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        Fall 2026 UROP
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="urop.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        biomedical UROP
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="fidelity.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        Fidelity internship
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="independent.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        ML independent study
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="impact.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        impact
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="contact.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        contact me
+       </span>
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </details>
+  <header class="site-tools">
+   <details class="site-info">
+    <summary aria-label="About this website">
+     <img alt="" src="../Images/information.png"/>
+    </summary>
+    <p>
+     built from scratch with HTML, CSS &amp; JavaScript. a little space for my work and curiosities.
+    </p>
+   </details>
+   <a href="https://github.com/IlyesOul" rel="noopener noreferrer" target="_blank">
+    <img alt="My GitHub" src="../Images/github.png"/>
+   </a>
+  </header>
+  <main id="main-content">
+   <header class="detail-heading">
+    <p class="eyebrow">
+     projects / game development
+    </p>
+    <h1>
+     game development
+    </h1>
+    <div class="accent-line">
+    </div>
+   </header>
+   <div class="project-grid">
+    <article class="project-card">
+     <a class="project-image" href="jet.html">
+      <img alt="" loading="lazy" src="../Images/Jet_Output.png"/>
+     </a>
+     <p class="eyebrow">
+     </p>
+     <h2>
+      <a href="jet.html">
+       The Space Race
+      </a>
+     </h2>
+     <p>
+      a fast-paced multiplayer game where two players race through an asteroid-filled space, dodging obstacles to reach the finish line in a race against time
+     </p>
+     <a class="action" href="jet.html">
+      EXPLORE
+      <span aria-hidden="true">
+       ↗
+      </span>
+     </a>
+    </article>
+    <article class="project-card">
+     <a class="project-image" href="sling.html">
+      <img alt="" loading="lazy" src="../Images/Output_Sling.png"/>
+     </a>
+     <p class="eyebrow">
+     </p>
+     <h2>
+      <a href="sling.html">
+       Sling and Stack 'em
+      </a>
+     </h2>
+     <p>
+      based on Angry Birds, this game requires the user to optimize their efforts between offense and defense in a battle against a computer-bot!
+     </p>
+     <a class="action" href="sling.html">
+      EXPLORE
+      <span aria-hidden="true">
+       ↗
+      </span>
+     </a>
+    </article>
+    <article class="project-card">
+     <a class="project-image" href="argon.html">
+      <img alt="" loading="lazy" src="../Images/Unity_IMG.jpg"/>
+     </a>
+     <p class="eyebrow">
+     </p>
+     <h2>
+      <a href="argon.html">
+       Argon Escape
+      </a>
+     </h2>
+     <p>
+      this Unity/C# game takes the user through an array of diverse enviroments where they must comamander a rocket through various obstacles that progressively become more difficult!
+     </p>
+     <a class="action" href="argon.html">
+      EXPLORE
+      <span aria-hidden="true">
+       ↗
+      </span>
+     </a>
+    </article>
+   </div>
+   <div class="page-end">
+    <a class="action" href="projects_temp.html">
+     ALL PROJECTS
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+   </div>
+  </main>
+  <footer class="site-footer">
+   Ilyes Ouldsaada
+   <span>
+    MIT · class of 2029
+   </span>
+  </footer>
+ </body>
 </html>

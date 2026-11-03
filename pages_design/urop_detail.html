@@ -1,99 +1,322 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <link rel="icon" type="image/x-icon" href="../Images/favicon.png">
-        <title>Ilyes's UROP</title>
-        <link rel = "stylesheet" type = "text/css"href = "design/style.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <script src="../functionality/layout-utils.js"></script>
-        <script src="../functionality/urop_functionality.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Martian Mono' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
-
-        <style>
-            img {
-                max-width: 100%;
-            }
-            </style>
-    </head>
-
-    <body style="background-color: #18181C; position:relative">
-
-        <a href="https://ilyesoul.github.io/portfolio_site/index.html" class="image-link">
-            <img src="../Images/favicon.png" alt="Return Home" style="border-color: rgb(164, 125, 25);position:absolute;width:calc(var(--page-w) /10); right:calc(var(--page-w) /1.11); top:calc(-1 * var(--page-w) /200); border-radius: 15%;  transform: scale(0.75);">
-        </a>
-
-        <div class = "list_grid">
-
-        
-        <p style = "position:absolute;font-family: Martian Mono; left:calc(var(--page-w) /10); color:white; font-size:calc(var(--page-w) /50); top:calc(var(--page-w) /100)">
-            MIT-Harvard Biomedical Center UROP | Dec 2025 – March 2026
-        </p>
-        
-        
-        <p style = "position:absolute;font-family: Martian mono; left:calc(var(--page-w) /8); color:white; font-size:calc(var(--page-w) /70); top:calc(var(--page-w) /6.75); width: calc(var(--page-w) /3);">
-            research focus: deep learning for biomedical imaging
-        </p>
-        <div class = "white_bar" style = "position:absolute; width: calc(var(--page-w) /3); top:calc(var(--page-w) /5); left:calc(var(--page-w) /8); margin-left: 0; margin-top: 0; background-color: blue;"></div>
-        <p style = "position:absolute; font-family: Changa;  color:whitesmoke; font-size:calc(var(--page-w) /90); top:calc(var(--page-w) /5); width: calc(var(--page-w) /2.75); left:calc(var(--page-w) /9)">as an undergraduate researcher at the MIT-Harvard Biomedical Center, i engineered deep learning workflows for automated coronary plaque image segmentation and OCT/OAC architecture benchmarking in Python. i collaborated closely with clinical mentors to interpret quantitative findings and adapt our modeling strategy to overcome ambiguous ground truth labels and class distributional irregularities.</p>
-
-         
-        <p style = "position:absolute;font-family: Martian Mono; color:white; font-size:calc(var(--page-w) /70); top:calc(var(--page-w) /2.05); left:calc(var(--page-w) /5)">
-            architecture benchmarking
-        </p>
-        <div class = "white_bar" style = "position:absolute;width: calc(var(--page-w) /4.5); top:calc(var(--page-w) /1.9); left:calc(var(--page-w) /4.75); margin-left: 0; margin-top: 0; background-color: blue;"></div>
-        <p style = "position:absolute;font-family: Changa;  color:whitesmoke; font-size:calc(var(--page-w) /90); top:calc(var(--page-w) /1.9); width: calc(var(--page-w) /2.8); left:calc(var(--page-w) /7.5)">i designed and systematically benchmarked 14 deep learning architectures to evaluate relative signal extraction performance between two optical imaging modalities (OCT and OAC), implementing automated training pipelines to ensure reproducible, fair comparisons across models.</p>
-
-       
-       <p style = "position:absolute;font-family: Martian Mono; left:calc(var(--page-w) /1.4); color:white; font-size:calc(var(--page-w) /70); top:calc(var(--page-w) /6.4)">
-        key research areas
-        </p>
-       <div class = "white_bar" style = "position:absolute;width: calc(var(--page-w) /7); top:calc(var(--page-w) /5.15); left:calc(var(--page-w) /1.375); margin-left: 0; margin-top: 0; background-color: blue;"></div>
-
-
-        <div class = "list_grid">
-            <ol style = "position: absolute; top: calc(var(--page-w) /6); left:calc(var(--page-w) /17); width:calc(var(--page-w) /1.15)">
-                <li style = "list-style:circle;font-family: Changa;  color:white; font-size:medium; margin-top:calc(var(--page-w) /36.57);margin-left:calc(var(--page-w) /1.6);margin-right:calc(-1 * var(--page-w) /25.6);">
-                    Coronary plaque image segmentation
-                </li>
-                <li style = "list-style:circle;font-family: Changa;  color:white; font-size:medium; margin-top:calc(var(--page-w) /36.57);margin-left:calc(var(--page-w) /1.6);margin-right:calc(-1 * var(--page-w) /25.6);">
-                    OCT vs. OAC modality comparison
-                </li>
-                <li style = "width:calc(var(--page-w) /6);list-style:circle;font-family: Changa;  color:white; font-size:medium; margin-top:calc(var(--page-w) /36.57);margin-left:calc(var(--page-w) /1.6);margin-right:calc(-1 * var(--page-w) /25.6);">
-                    UNet architecture optimization & parameter sweeps
-                </li>
-                <li style = "list-style:circle;font-family: Changa;  color:white; font-size:medium; margin-top:calc(var(--page-w) /36.57);margin-left:calc(var(--page-w) /1.6);margin-right:calc(-1 * var(--page-w) /25.6);">
-                    Multi-objective optimization under class imbalance
-                </li>
-                <li style = "list-style:circle;font-family: Changa;  color:white; font-size:medium; margin-top:calc(var(--page-w) /45);margin-left:calc(var(--page-w) /1.6);margin-right:calc(-1 * var(--page-w) /25.6);">
-                    Cross-validated loss metric evaluation
-                </li>
-                <li style = "list-style:circle;font-family: Changa;  color:white; font-size:medium; margin-top:calc(var(--page-w) /45);margin-left:calc(var(--page-w) /1.6);margin-right:calc(-1 * var(--page-w) /25.6);">
-                    Clinical mentor collaboration & findings interpretation
-                </li>
-            </ol>
-        </div>
-        
-        <p style = "position:absolute;font-family: Martian Mono; left:calc(var(--page-w) /1.515); color:white; font-size:calc(var(--page-w) /70); top:calc(var(--page-w) /1.28); ">
-            model optimization
-        </p>
-        <div class = "white_bar" style = "position:absolute; width: calc(var(--page-w) /5.5); left:calc(var(--page-w) /1.515); margin-left: 0; margin-top: 0; background-color: blue; top:calc(var(--page-w) /1.22);"></div>
-        <p style = "position:absolute;font-family: Changa;  color:whitesmoke; font-size:calc(var(--page-w) /90); top:calc(var(--page-w) /1.225); left:calc(var(--page-w) /1.74); width:calc(var(--page-w) /2.75)">i executed structured parameter sweeps and multi-objective optimization across UNet architectures, optimizing cross-validated loss metrics to improve model generalization under severe class imbalance — a core challenge in biomedical segmentation tasks.</p>
-
-         <p style = "position:absolute;font-family: Martian Mono; left:calc(var(--page-w) /1.48); color:white; font-size:calc(var(--page-w) /70); top:calc(var(--page-w) /1.65); ">
-            clinical context
-        </p>
-        <div class = "white_bar" style = "position:absolute; width: calc(var(--page-w) /5.5); left:calc(var(--page-w) /1.51); margin-left: 0; margin-top: 0; background-color: blue; top:calc(var(--page-w) /1.55);"></div>
-        <p style = "position:absolute;font-family: Changa;  color:whitesmoke; font-size:calc(var(--page-w) /90); top:calc(var(--page-w) /1.55); left:calc(var(--page-w) /1.74); width:calc(var(--page-w) /2.75)">working at the intersection of computer science and cardiology, this UROP gave me firsthand experience translating deep learning research into tools that support clinical decision-making — navigating real-world constraints like noisy labels, imbalanced datasets, and the need for rigorous, interpretable model evaluation.</p>
-
-        <p style = "position:absolute;font-family: Martian Mono; left:calc(var(--page-w) /4.5); color:white; font-size:calc(var(--page-w) /70); top:calc(var(--page-w) /1.4) ">
-            tools & technologies
-        </p>
-        <div class = "white_bar" style = "position:absolute;width: calc(var(--page-w) /5); top:calc(var(--page-w) /1.325); left:calc(var(--page-w) /4.5); margin-left: 0; margin-top: 0; background-color: blue;"></div>
-        <p style = "position:absolute;font-family: Changa;  color:whitesmoke; font-size:calc(var(--page-w) /90); top:calc(var(--page-w) /1.325); width: calc(var(--page-w) /2.5); left:calc(var(--page-w) /9.5)">python, PyTorch, automated training pipelines, UNet and related segmentation architectures, cross-validation frameworks, and multi-objective hyperparameter optimization — applied to optical coherence tomography (OCT) and optical attenuation coefficient (OAC) imaging data.</p>
-        
-        <p style = "position:absolute;font-family: Changa;  color:white; font-size:calc(var(--page-w) /70); top:calc(var(--page-w) /1.05);left:calc(var(--page-w) /3.5); padding-bottom:calc(var(--page-w) /25.6)"><a  target = "_blank" href= "https://github.com/IlyesOul"> 
-        Github</a></p>
-
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Biomedical research | Ilyes Ouldsaada
+  </title>
+  <meta content="Ilyes Ouldsaada, MIT computer science student working on machine learning, computer vision, robotics, and healthcare applications." name="description"/>
+  <link href="../Images/favicon.png" rel="icon"/>
+  <link href="design/style.css" rel="stylesheet"/>
+  <link href="design/portfolio.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&amp;family=Changa:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <script defer="" src="../functionality/layout-utils.js">
+  </script>
+  <script defer="" src="../functionality/urop_functionality.js">
+  </script>
+ </head>
+ <body class="portfolio-page">
+  <a class="skip-link" href="#main-content">
+   skip to content
+  </a>
+  <nav aria-label="Pages" class="page-nav">
+   <p class="nav-caption">
+    pages
+   </p>
+   <ul>
+    <li>
+     <a href="../index.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       home page
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="aboutme.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       about Ilyes
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="projects.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       my projects
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="nepf.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       Fall 2026 UROP
+      </span>
+     </a>
+    </li>
+    <li>
+     <a aria-current="page" href="urop.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       biomedical UROP
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="fidelity.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       Fidelity internship
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="independent.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       ML independent study
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="impact.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       impact
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="contact.html">
+      <span aria-hidden="true" class="page-dot">
+      </span>
+      <span class="page-label">
+       contact me
+      </span>
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <details class="mobile-nav">
+   <summary>
+    pages
+    <span aria-hidden="true">
+     ＋
+    </span>
+   </summary>
+   <nav aria-label="Mobile pages">
+    <ul>
+     <li>
+      <a href="../index.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        home page
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="aboutme.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        about Ilyes
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="projects.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        my projects
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="nepf.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        Fall 2026 UROP
+       </span>
+      </a>
+     </li>
+     <li>
+      <a aria-current="page" href="urop.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        biomedical UROP
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="fidelity.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        Fidelity internship
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="independent.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        ML independent study
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="impact.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        impact
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="contact.html">
+       <span aria-hidden="true" class="page-dot">
+       </span>
+       <span class="page-label">
+        contact me
+       </span>
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </details>
+  <header class="site-tools">
+   <details class="site-info">
+    <summary aria-label="About this website">
+     <img alt="" src="../Images/information.png"/>
+    </summary>
+    <p>
+     built from scratch with HTML, CSS &amp; JavaScript. a little space for my work and curiosities.
+    </p>
+   </details>
+   <a href="https://github.com/IlyesOul" rel="noopener noreferrer" target="_blank">
+    <img alt="My GitHub" src="../Images/github.png"/>
+   </a>
+  </header>
+  <main id="main-content">
+   <header class="detail-heading">
+    <p class="eyebrow">
+     MIT-Harvard Biomedical Center · Dec 2025–Mar 2026
+    </p>
+    <h1>
+     deep learning for medical imaging
+    </h1>
+    <div class="accent-line">
+    </div>
+    <p class="lead">
+     undergraduate research at the intersection of computer vision and cardiology.
+    </p>
+   </header>
+   <figure class="research-result">
+    <a aria-label="Open the full segmentation figure" class="figure-link" href="../Images/seg.jpeg">
+     <img alt="Coronary plaque image segmentation comparison showing input images, ground truth masks, and predictions" loading="lazy" src="../Images/seg.jpeg"/>
+    </a>
+    <figcaption>
+     coronary plaque segmentation: input images, ground truth, and predictions.
+    </figcaption>
+   </figure>
+   <div class="detail-grid">
+    <article>
+     <h3>
+      research focus
+     </h3>
+     <p>
+      i developed Python/PyTorch workflows for automated coronary plaque image segmentation, comparing optical coherence tomography (OCT) and optical attenuation coefficient (OAC) imaging.
+     </p>
+     <p>
+      working with clinical mentors, i connected quantitative model comparisons to the imaging questions behind the project.
+     </p>
+    </article>
+    <article>
+     <h3>
+      architecture benchmarking
+     </h3>
+     <p>
+      i systematically benchmarked 14 neural network architectures, including CNNs, U-Nets, and transformer-based models, using automated training pipelines for reproducible comparisons.
+     </p>
+    </article>
+    <article>
+     <h3>
+      model optimization
+     </h3>
+     <p>
+      i automated hyperparameter sweeps and cross-validation experiments to address noisy labels and severe class imbalance. the resulting improvements increased mean IoU by approximately 6.5 percentage points.
+     </p>
+    </article>
+    <article>
+     <h3>
+      lessons for healthcare ML
+     </h3>
+     <p>
+      the project made data quality and evaluation central to how i approach ML. medical images can have ambiguous boundaries and uneven class distributions; a useful comparison needs to account for both.
+     </p>
+    </article>
+    <article>
+     <h3>
+      key research areas
+     </h3>
+     <ul class="clean-list">
+      <li>
+       coronary plaque segmentation
+      </li>
+      <li>
+       OCT / OAC modality comparison
+      </li>
+      <li>
+       U-Net optimization &amp; parameter sweeps
+      </li>
+      <li>
+       cross-validation under class imbalance
+      </li>
+      <li>
+       clinical interpretation of findings
+      </li>
+     </ul>
+    </article>
+    <article>
+     <h3>
+      tools &amp; technologies
+     </h3>
+     <p>
+      Python, PyTorch, neural segmentation architectures, automated parameter sweeps, and cross-validated model evaluation.
+     </p>
+    </article>
+   </div>
+   <div class="page-end">
+    <a class="action" href="urop.html">
+     BACK TO OVERVIEW
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+   </div>
+  </main>
+  <footer class="site-footer">
+   Ilyes Ouldsaada
+   <span>
+    MIT · class of 2029
+   </span>
+  </footer>
+ </body>
 </html>
